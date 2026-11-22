@@ -34,40 +34,46 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom Styling for Healthcare Analytics Executive UI
+# Custom Styling for Healthcare Analytics Executive UI (Theme-Adaptive for Dark and Light Modes)
 st.markdown("""
 <style>
     .main-title {
         font-size: 28px;
         font-weight: 700;
-        color: #1a365d;
+        color: var(--text-color, #1a365d);
         margin-bottom: 4px;
     }
     .sub-title {
         font-size: 14px;
-        color: #4a5568;
+        color: var(--text-color, #4a5568);
+        opacity: 0.85;
         margin-bottom: 20px;
     }
-    .metric-card {
-        background-color: #f7fafc;
-        border-radius: 8px;
-        padding: 16px;
-        border-left: 4px solid #2b6cb0;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    [data-testid="stMetric"] {
+        background-color: var(--secondary-background-color, #f8fafc) !important;
+        border: 1px solid rgba(128, 128, 128, 0.25) !important;
+        padding: 14px 18px !important;
+        border-radius: 10px !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
     }
-    .stMetric {
-        background: #f8fafc;
-        padding: 10px 14px;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
+    [data-testid="stMetricLabel"] {
+        color: var(--text-color, #4a5568) !important;
+        opacity: 0.85 !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stMetricValue"] {
+        color: var(--text-color, #1a365d) !important;
+        font-size: 26px !important;
+        font-weight: 700 !important;
     }
     .disclaimer-box {
-        background-color: #ebf8ff;
-        border: 1px solid #bee3f8;
-        border-radius: 6px;
+        background-color: var(--secondary-background-color, #ebf8ff);
+        border: 1px solid rgba(66, 153, 225, 0.4);
+        border-radius: 8px;
         padding: 12px;
         font-size: 13px;
-        color: #2c5282;
+        color: var(--text-color, #2c5282);
         margin-top: 15px;
     }
 </style>
@@ -242,7 +248,8 @@ def main():
             if "billing" in data and not data["billing"].empty:
                 b_df = data["billing"].dropna(subset=["transaction_date_cleaned"]).copy()
                 b_df["month"] = pd.to_datetime(b_df["transaction_date_cleaned"]).dt.to_period("M").astype(str)
-                monthly = b_df.groupby("month")["corrected_total_amount"].sum() / 1e7
+                b_df_22m = b_df[b_df["month"] <= "2026-10"]
+                monthly = b_df_22m.groupby("month")["corrected_total_amount"].sum() / 1e7
                 st.line_chart(monthly)
                 st.caption("Figure: 22-Month monthly network revenue in ₹ Crores (Jan 2025 - Oct 2026).")
         
