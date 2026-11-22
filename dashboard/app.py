@@ -79,12 +79,27 @@ def load_all_data():
     """Load all cleaned, processed, and profiled dataset tables."""
     base_data = {}
     
-    # Paths
+    # Paths with automatic fallback to data/samples for cloud deployments
     p_path = os.path.join("data", "cleaned", "patients_cleaned.csv")
+    if not os.path.exists(p_path):
+        p_path = os.path.join("data", "samples", "patients_cleaned_sample.csv")
+
     opd_path = os.path.join("data", "cleaned", "opd_visits_cleaned.csv")
+    if not os.path.exists(opd_path):
+        opd_path = os.path.join("data", "samples", "opd_visits_cleaned_sample.csv")
+
     adm_path = os.path.join("data", "cleaned", "admissions_cleaned.csv")
+    if not os.path.exists(adm_path):
+        adm_path = os.path.join("data", "samples", "admissions_cleaned_sample.csv")
+
     lab_path = os.path.join("data", "cleaned", "lab_tests_cleaned.csv")
+    if not os.path.exists(lab_path):
+        lab_path = os.path.join("data", "samples", "lab_tests_cleaned_sample.csv")
+
     bill_path = os.path.join("data", "cleaned", "billing_cleaned.csv")
+    if not os.path.exists(bill_path):
+        bill_path = os.path.join("data", "samples", "billing_cleaned_sample.csv")
+
     corr_path = os.path.join("data", "cleaned", "billing_correction_log.csv")
     
     feat_path = os.path.join("data", "processed", "patient_features_full.csv")
