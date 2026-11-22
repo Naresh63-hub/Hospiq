@@ -1,0 +1,6 @@
+Table,Initial Rows,Cleaned Rows,Key Anomaly Fixed
+Patients,65000,65000,"Missing Age imputed via DOB (7,815 records)"
+OPD Visits,220000,220000,"Diagnosis standardized (3,357 missing resolved)"
+Admissions,45000,45000,"Date inversions fixed (2,783) & Discharges imputed (890)"
+Lab Tests,90000,90000,"Date format normalized, costs verified"
+Billing,81600,80000,"Duplicates removed (1,600), GST corrected (7,869 rows)"

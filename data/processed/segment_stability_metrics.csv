@@ -1,0 +1,11 @@
+Metric,Value
+Common Cohort Size,"53,434 Patients"
+Overall Segment Retention Rate,34.75%
+Overall Migration Rate,65.25%
+Adjusted Rand Index (ARI),0.0449
+Retention: At-Risk Patients,37.4%
+Retention: Growing Patients,11.8%
+Retention: High-Value Active Patients,26.1%
+Retention: Low-Engagement Patients,23.1%
+Retention: Loyal Regular Patients,46.4%
+Retention: Occasional Patients,17.2%

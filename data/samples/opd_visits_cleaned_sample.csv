@@ -1,0 +1,501 @@
+visit_id,patient_id,visit_date,diagnosis,department,doctor_id,visit_type,dataset_type,visit_date_cleaned,diagnosis_cleaned,department_cleaned,visit_type_cleaned
+OPD2000001,P128000,2026-07-21,Asthma bronchiale,Pulmonology,DOC160,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-21,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000002,P164775,15/04/2025,Acute Bronchitis,General Medicine,DOC101,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-15,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000003,P114207,01/09/2025,T2DM,Endocrinology,DOC105,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-09,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000004,P146713,2025-06-30,OA bilateral knees,Orthopedics,DOC112,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-30,Osteoarthritis,Orthopedics,Emergency
+OPD2000005,P131037,2025-10-20,Systemic Hypertension,Cardiology,DOC139,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-20,Essential Hypertension,Cardiology,Follow-Up
+OPD2000006,P136150,07/14/2026,Gastroenteritis with mild dehydration,Gastroenterology,DOC133,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-14,Gastroenteritis,Gastroenterology,Emergency
+OPD2000007,P128003,2025-08-21,Bronchial Asthma,Pulmonology,DOC131,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-21,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000008,P128440,10/09/2026,type 2 diabetes,Endocrinology,DOC114,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-09,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000009,P143497,2026-05-19,HTN,Cardiology,DOC131,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-19,Essential Hypertension,Cardiology,Consultation
+OPD2000010,P152684,2025-10-16,Systemic Hypertension,Cardiology,DOC108,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-16,Essential Hypertension,Cardiology,Follow-Up
+OPD2000011,P121815,10/23/2026,Essential Hypertension,Cardiology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-23,Essential Hypertension,Cardiology,Consultation
+OPD2000012,P153492,2025-10-10,htn,Cardiology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-10,Essential Hypertension,Cardiology,Consultation
+OPD2000013,P119935,2025-11-01,High Blood Pressure,Cardiology,DOC124,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-01,Essential Hypertension,Cardiology,Follow-Up
+OPD2000014,P112210,2026-09-11,Acute febrile illness,General Medicine,DOC144,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-11,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000015,P134185,2025-01-18,Food poisoning / acute colitis,Gastroenterology,DOC126,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-18,Gastroenteritis,Gastroenterology,Consultation
+OPD2000016,P116529,08/01/2025,Osteoarthritis of lumbar spine,Orthopedics,DOC147,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-01,Osteoarthritis,Orthopedics,Consultation
+OPD2000017,P113948,2025/12/15,Annual Wellness Exam,Neurology,DOC148,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-15,Routine Health Checkup,Neurology,Routine Checkup
+OPD2000018,P129060,2026-05-23,Osteoarthritis of lumbar spine,Orthopedics,DOC147,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-23,Osteoarthritis,Orthopedics,Consultation
+OPD2000019,P119757,2025-04-13,Hypertension (primary),Cardiology,DOC121,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-13,Essential Hypertension,Cardiology,Emergency
+OPD2000020,P124579,08/03/2025,Essential Hypertension,Cardiology,DOC125,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-03,Essential Hypertension,Cardiology,Consultation
+OPD2000021,P103839,2026/02/10,Osteoarthritis of lumbar spine,Orthopedics,DOC109,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-10,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000022,P132090,2026-05-11,Acute febrile illness,General Medicine,DOC160,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-11,Viral Fever / PUO,General Medicine,Consultation
+OPD2000023,P147369,2025-09-30,Asthma,Pulmonology,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-30,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000024,P132018,2026-05-26,Essential Hypertension,Cardiology,DOC127,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-26,Essential Hypertension,Cardiology,Consultation
+OPD2000025,P116583,2025-08-16,OA bilateral knees,Endocrinology,DOC145,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-16,Osteoarthritis,Endocrinology,Consultation
+OPD2000026,P118171,2025-03-12,Angina Pectoris,Cardiology,DOC118,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-12,Coronary Artery Disease,Cardiology,Consultation
+OPD2000027,P117983,04/01/2026,HTN,Cardiology,DOC122,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-01,Essential Hypertension,Cardiology,Follow-Up
+OPD2000028,P143986,2025-09-03,Bronchitis acute,General Medicine,DOC140,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-03,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000029,P129978,2025-11-14,Asthma bronchiale,Endocrinology,DOC143,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-14,Bronchial Asthma / COPD,Endocrinology,Follow-Up
+OPD2000030,P154495,2025-10-06,Angina Pectoris,Cardiology,DOC143,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-06,Coronary Artery Disease,Cardiology,Consultation
+OPD2000031,P112950,2025-10-18,HTN,Cardiology,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-18,Essential Hypertension,Cardiology,Consultation
+OPD2000032,P113583,2025-05-10,High Blood Pressure,Gastroenterology,DOC157,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-10,Essential Hypertension,Gastroenterology,Follow-Up
+OPD2000033,P113221,2026-10-11,Acute febrile illness,Orthopedics,DOC127,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-11,Viral Fever / PUO,Orthopedics,Follow-Up
+OPD2000034,P135737,2026-02-22,type 2 diabetes,Endocrinology,DOC117,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-22,Type 2 Diabetes Mellitus,Endocrinology,Routine Checkup
+OPD2000035,P137454,06/05/2025,chest infection / bronchitis,Cardiology,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-05,Acute Bronchitis,Cardiology,Consultation
+OPD2000036,P149426,06/05/2025,Food poisoning / acute colitis,Gastroenterology,DOC116,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-05,Gastroenteritis,Gastroenterology,Emergency
+OPD2000037,P113966,19/05/2025,ckd stage 3,Nephrology,DOC157,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-19,Chronic Kidney Disease,Nephrology,Emergency
+OPD2000038,P135441,11/02/2026,Chronic Renal Failure (CRF),Nephrology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-11-02,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000039,P108820,2026-07-28,Infectious diarrhea,Gastroenterology,DOC117,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-28,Gastroenteritis,Gastroenterology,Emergency
+OPD2000040,P137226,23/07/2025,Osteoarthritis of lumbar spine,Orthopedics,DOC118,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-23,Osteoarthritis,Orthopedics,Consultation
+OPD2000041,P138384,06/09/2026,General health evaluation,General Medicine,DOC149,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-09,Routine Health Checkup,General Medicine,Consultation
+OPD2000042,P135585,12/17/2025,Routine Health Checkup,Neurology,DOC136,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-17,Routine Health Checkup,Neurology,Consultation
+OPD2000043,P151454,2025-05-04,COPD with acute exacerbation,General Medicine,DOC157,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-04,Bronchial Asthma / COPD,General Medicine,Follow-Up
+OPD2000044,P148110,06/05/2025,Executive Health Screening,Endocrinology,DOC107,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-05,Routine Health Checkup,Endocrinology,Emergency
+OPD2000045,P163140,2025-09-09,angina pectoris,Cardiology,DOC151,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-09,Coronary Artery Disease,Cardiology,Consultation
+OPD2000046,P115088,2025-12-03,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-03,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000047,P152405,01/03/2026,ANGINA PECTORIS,Cardiology,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-03,Coronary Artery Disease,Cardiology,Consultation
+OPD2000048,P158795,2025-12-12,HTN,Cardiology,DOC126,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-12,Essential Hypertension,Cardiology,Consultation
+OPD2000049,P156544,15/01/2025,Osteoarthritis of lumbar spine,Cardiology,DOC132,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-15,Osteoarthritis,Cardiology,Follow-Up
+OPD2000050,P151114,2026-03-23,Executive Health Screening,General Medicine,DOC134,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-23,Routine Health Checkup,General Medicine,Follow-Up
+OPD2000051,P114063,06/05/2025,Angina Pectoris,Cardiology,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-05,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000052,P162423,2025-11-22,Viral Fever,General Medicine,DOC159,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-22,Viral Fever / PUO,General Medicine,Consultation
+OPD2000053,P122098,2025-08-26,Routine Health Checkup,Orthopedics,DOC101,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-26,Routine Health Checkup,Orthopedics,Consultation
+OPD2000054,P106173,26/09/2025,Viral Fever,Neurology,DOC136,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-26,Viral Fever / PUO,Neurology,Consultation
+OPD2000055,P108427,2025-04-10,Dengue fever (seronegative),General Medicine,DOC115,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-10,Viral Fever / PUO,General Medicine,Consultation
+OPD2000056,P111021,2025-06-04,Degenerative joint disease,Orthopedics,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-04,Osteoarthritis,Orthopedics,Consultation
+OPD2000057,P112811,13/06/2026,Acute Gastroenteritis (AGE),Gastroenterology,DOC153,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-13,Gastroenteritis,Gastroenterology,Consultation
+OPD2000058,P149514,2025-09-19,asthma bronchiale,Pulmonology,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-19,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000059,P127169,19/12/2025,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC132,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-19,Other Medical Condition,Pulmonology,Emergency
+OPD2000060,P109589,16/03/2026,Diabetes Mellitus Type II,Endocrinology,DOC132,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-16,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000061,P101605,2026-07-26,Acute Bronchitis,General Medicine,DOC118,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-26,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000062,P118954,2026-01-29,Annual Wellness Exam,General Medicine,DOC125,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-29,Routine Health Checkup,General Medicine,Emergency
+OPD2000063,P143282,10/07/2026,Diabetes Mellitus Type II,Endocrinology,DOC115,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-07,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000064,P141344,09/13/2025,Diabetic Nephropathy / CKD,Nephrology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-13,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000065,P121015,2026-10-29,Acute Bronchitis,General Medicine,DOC126,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-29,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000066,P135366,01/12/2025,Chest infection / bronchitis,General Medicine,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-12,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000067,P132971,2025-10-08,Acute Bronchitis,General Medicine,DOC144,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-08,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000068,P128388,2026-07-18,gastroenteritis with mild dehydration,Gastroenterology,DOC107,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-18,Gastroenteritis,Gastroenterology,Emergency
+OPD2000069,P129278,2026-05-31,Diabetic Nephropathy / CKD,Nephrology,DOC148,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-31,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000070,P109161,2025-09-20,Pyrexia of Unknown Origin (PUO),General Medicine,DOC101,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-20,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000071,P157326,04/11/2026,Annual Wellness Exam,General Medicine,DOC156,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-11,Routine Health Checkup,General Medicine,Follow-Up
+OPD2000072,P137703,2026-10-03,Acute Bronchitis,General Medicine,DOC153,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-03,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000073,P115581,2025-01-10,Essential Hypertension,Cardiology,DOC117,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-10,Essential Hypertension,Cardiology,Follow-Up
+OPD2000074,P127168,2025-12-20,Gastroenteritis with mild dehydration,Gastroenterology,DOC134,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-20,Gastroenteritis,Gastroenterology,Consultation
+OPD2000075,P107734,2025-05-20,coronary atherosclerosis,Cardiology,DOC141,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-20,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000076,P153322,13/03/2025,Diabetes Mellitus - uncontrolled,Endocrinology,DOC156,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-13,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000077,P128406,2025-06-24,Non-insulin dependent diabetes mellitus (NIDDM),Orthopedics,DOC149,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-24,Type 2 Diabetes Mellitus,Orthopedics,Follow-Up
+OPD2000078,P123232,19/01/2025,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-19,Other Medical Condition,Pulmonology,Consultation
+OPD2000079,P144709,2025-11-08,Coronary Artery Disease,Cardiology,DOC101,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-08,Coronary Artery Disease,Cardiology,Emergency
+OPD2000080,P140098,20/09/2026,Essential Hypertension,Pulmonology,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-20,Essential Hypertension,Pulmonology,Consultation
+OPD2000081,P117061,2026-05-19,T2DM,Endocrinology,DOC133,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-19,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000082,P161222,2026-05-31,Diabetes Mellitus - uncontrolled,Endocrinology,DOC151,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-31,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000083,P159867,2025-11-23,Bronchial Asthma,Pulmonology,DOC148,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-23,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000084,P128884,06/22/2025,T2DM,Endocrinology,DOC157,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-22,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000085,P149797,2026-02-19,Routine Health Checkup,General Medicine,DOC133,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-19,Routine Health Checkup,General Medicine,Consultation
+OPD2000086,P103113,2025-01-10,Systemic Hypertension,Nephrology,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-10,Essential Hypertension,Nephrology,Consultation
+OPD2000087,P117919,2025-05-20,Routine Health Checkup,General Medicine,DOC135,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-20,Routine Health Checkup,General Medicine,Consultation
+OPD2000088,P104233,01/25/2025,Osteoarthritis of lumbar spine,Orthopedics,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-25,Osteoarthritis,Orthopedics,Consultation
+OPD2000089,P147590,19/09/2025,,General Medicine,DOC138,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-19,Unspecified / General Consultation,General Medicine,Consultation
+OPD2000090,P135942,02/06/2025,Viral Fever,General Medicine,DOC110,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-06,Viral Fever / PUO,General Medicine,Consultation
+OPD2000091,P128882,2025/08/27,diabetes mellitus type ii,Endocrinology,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-27,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000092,P146441,2025/07/08,HYPERTENSION (PRIMARY),Cardiology,DOC149,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-08,Essential Hypertension,Cardiology,Follow-Up
+OPD2000093,P142897,19/04/2026,Essential Hypertension,Cardiology,DOC149,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-19,Essential Hypertension,Cardiology,Consultation
+OPD2000094,P160588,28/04/2026,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC142,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-28,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000095,P126022,2025-02-02,Essential Hypertension,Cardiology,DOC121,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-02,Essential Hypertension,Cardiology,Follow-Up
+OPD2000096,P127756,2025-10-02,Degenerative joint disease,Orthopedics,DOC134,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-02,Osteoarthritis,Orthopedics,Consultation
+OPD2000097,P118574,28/05/2026,Osteoarthritis of lumbar spine,Orthopedics,DOC144,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-28,Osteoarthritis,Orthopedics,Consultation
+OPD2000098,P164207,2026-02-27,Type 2 Diabetes Mellitus,Endocrinology,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-27,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000099,P115403,2026-07-18,Hypertension (primary),Cardiology,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-18,Essential Hypertension,Cardiology,Follow-Up
+OPD2000100,P129591,2025/07/12,Acute Gastroenteritis (AGE),Gastroenterology,DOC133,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-12,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000101,P136254,2026-02-06,Asthma bronchiale,Pulmonology,DOC109,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-06,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000102,P118714,2026-01-19,COPD WITH ACUTE EXACERBATION,Pulmonology,DOC104,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-19,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000103,P112380,2026-06-21,Diabetes Mellitus - uncontrolled,Endocrinology,DOC126,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-21,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000104,P151533,2025-12-25,High Blood Pressure,Cardiology,DOC113,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-25,Essential Hypertension,Cardiology,Emergency
+OPD2000105,P153002,2025-01-23,CAD,Cardiology,DOC156,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-23,Coronary Artery Disease,Cardiology,Consultation
+OPD2000106,P116380,2026-09-19,T2DM,Endocrinology,DOC146,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-19,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000107,P154066,08/01/2025,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-01,Other Medical Condition,Pulmonology,Consultation
+OPD2000108,P127689,2026-04-25,Executive Health Screening,General Medicine,DOC136,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-25,Routine Health Checkup,General Medicine,Consultation
+OPD2000109,P137258,19/08/2025,Acute Gastroenteritis (AGE),Gastroenterology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-19,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000110,P152098,05/01/2026,Dengue fever (seronegative),General Medicine,DOC159,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-01,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000111,P105063,2025-04-06,Systemic Hypertension,Cardiology,DOC133,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-06,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000112,P100117,06/20/2025,Chronic Kidney Disease - Stage 3,Nephrology,DOC106,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-20,Chronic Kidney Disease,Nephrology,Routine Checkup
+OPD2000113,P154317,08/19/2025,Essential Hypertension,Cardiology,DOC139,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-19,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000114,P134224,01/03/2026,Degenerative joint disease,Orthopedics,DOC133,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-03,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000115,P131996,2025-06-09,Osteoarthritis of lumbar spine,Orthopedics,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-09,Osteoarthritis,Orthopedics,Consultation
+OPD2000116,P100657,2026-05-07,VIRAL FEVER,General Medicine,DOC127,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-07,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000117,P136845,10/04/2025,Asthma,Pulmonology,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-04,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000118,P127820,05/18/2025,Angina Pectoris,Cardiology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-18,Coronary Artery Disease,Cardiology,Consultation
+OPD2000119,P141045,2025-04-15,acute bronchitis,General Medicine,DOC129,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-15,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000120,P108402,20/06/2026,Chronic Kidney Disease - Stage 3,Nephrology,DOC125,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-20,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000121,P138341,2025-08-06,Diabetic Nephropathy / CKD,Nephrology,DOC136,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-06,Chronic Kidney Disease,Nephrology,Emergency
+OPD2000122,P127795,2025-05-19,Coronary Artery Disease,Cardiology,DOC140,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-19,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000123,P120015,2026-10-11,Bronchial Asthma,Pulmonology,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-11,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000124,P155074,02/02/2025,Hypertension (primary),Cardiology,DOC149,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-02,Essential Hypertension,Cardiology,Follow-Up
+OPD2000125,P156258,2026-07-02,Diabetes Mellitus - uncontrolled,Endocrinology,DOC147,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-02,Type 2 Diabetes Mellitus,Endocrinology,Routine Checkup
+OPD2000126,P108431,2025-04-27,Gastroenteritis with mild dehydration,Nephrology,DOC142,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-27,Gastroenteritis,Nephrology,Emergency
+OPD2000127,P146713,2026/10/04,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC150,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-04,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000128,P118508,2025-02-25,Asthma,Pulmonology,DOC115,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-25,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000129,P130411,2026-01-03,HTN,Pulmonology,DOC144,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-03,Essential Hypertension,Pulmonology,Follow-Up
+OPD2000130,P159145,03/08/2026,Bronchitis acute,General Medicine,DOC142,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-08,Acute Bronchitis,General Medicine,Consultation
+OPD2000131,P124461,2025-05-21,INFECTIOUS DIARRHEA,Endocrinology,DOC160,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-21,Gastroenteritis,Endocrinology,Routine Checkup
+OPD2000132,P131525,2025-06-18,Diabetes Mellitus - uncontrolled,Endocrinology,DOC110,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-18,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000133,P162885,2025-06-22,Angina Pectoris,Orthopedics,DOC122,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-22,Coronary Artery Disease,Orthopedics,Follow-Up
+OPD2000134,P152531,2025-10-01,Ischemic Heart Disease (IHD),Cardiology,DOC139,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-01,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000135,P138864,2025-03-02,Diabetes Mellitus Type II,Endocrinology,DOC156,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-02,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000136,P143376,2025-04-16,Chronic Obstructive Pulmonary Disease,Cardiology,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-16,Other Medical Condition,Cardiology,Follow-Up
+OPD2000137,P102051,19/11/2025,General health evaluation,General Medicine,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-19,Routine Health Checkup,General Medicine,Consultation
+OPD2000138,P110806,18/05/2026,HTN,Cardiology,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-18,Essential Hypertension,Cardiology,Consultation
+OPD2000139,P120141,27/10/2026,OA bilateral knees,Orthopedics,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-27,Osteoarthritis,Orthopedics,Consultation
+OPD2000140,P115938,19/08/2026,High Blood Pressure,Cardiology,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-19,Essential Hypertension,Cardiology,Consultation
+OPD2000141,P130782,03/27/2026,angina pectoris,Cardiology,DOC159,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-27,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000142,P122869,09/12/2025,Acute febrile illness,General Medicine,DOC122,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-12,Viral Fever / PUO,General Medicine,Consultation
+OPD2000143,P136454,2026-08-10,angina pectoris,Cardiology,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-10,Coronary Artery Disease,Cardiology,Consultation
+OPD2000144,P136699,2026-01-04,ckd stage 3,Nephrology,DOC103,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-04,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000145,P142995,2026/09/23,Pyrexia of Unknown Origin (PUO),General Medicine,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-23,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000146,P135064,09/06/2026,type 2 diabetes,Endocrinology,DOC106,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-06,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000147,P163330,2025-06-17,OA bilateral knees,Orthopedics,DOC101,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-17,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000148,P138553,2025-12-18,DIABETES MELLITUS - UNCONTROLLED,Endocrinology,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-18,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000149,P139714,2026-05-09,Diabetic Nephropathy / CKD,Nephrology,DOC151,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-09,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000150,P104952,2026-03-13,Angina Pectoris,Cardiology,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-13,Coronary Artery Disease,Cardiology,Consultation
+OPD2000151,P138227,05/28/2026,Viral Fever,General Medicine,DOC158,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-28,Viral Fever / PUO,General Medicine,Routine Checkup
+OPD2000152,P101416,08/03/2025,Chest infection / bronchitis,General Medicine,DOC145,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-03,Acute Bronchitis,General Medicine,Consultation
+OPD2000153,P108185,2026-08-20,Routine Health Checkup,General Medicine,DOC147,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-20,Routine Health Checkup,General Medicine,Consultation
+OPD2000154,P141861,2025-04-04,Asthma bronchiale,Pulmonology,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-04,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000155,P103365,2026-06-05,Ischemic Heart Disease (IHD),Cardiology,DOC145,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-05,Coronary Artery Disease,Cardiology,Emergency
+OPD2000156,P152725,2025-09-12,Hypertension (primary),Cardiology,DOC125,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-12,Essential Hypertension,Cardiology,Follow-Up
+OPD2000157,P100945,2025-12-06,Diabetes Mellitus - uncontrolled,Endocrinology,DOC147,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-06,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000158,P102713,06/24/2025,Type 2 Diabetes Mellitus,Endocrinology,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-24,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000159,P120268,2026-04-27,,General Medicine,DOC154,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-27,Unspecified / General Consultation,General Medicine,Consultation
+OPD2000160,P150588,2025-02-01,ischemic heart disease (ihd),Cardiology,DOC148,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-01,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000161,P140790,31/03/2026,Chronic Renal Failure (CRF),Cardiology,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-31,Chronic Kidney Disease,Cardiology,Follow-Up
+OPD2000162,P125736,2025-11-27,Acute febrile illness,General Medicine,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-27,Viral Fever / PUO,General Medicine,Consultation
+OPD2000163,P152352,2025-07-11,CKD Stage 3,Nephrology,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-11,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000164,P124406,2025-09-20,Diabetes Mellitus Type II,Endocrinology,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-20,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000165,P139864,2025-07-11,High Blood Pressure,Cardiology,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-11,Essential Hypertension,Cardiology,Consultation
+OPD2000166,P156625,2026-08-09,Systemic Hypertension,Cardiology,DOC158,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-09,Essential Hypertension,Cardiology,Consultation
+OPD2000167,P120059,2025-08-02,Osteoarthritis Knee,Orthopedics,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-02,Osteoarthritis,Orthopedics,Consultation
+OPD2000168,P150491,2026-10-20,Dengue fever (seronegative),General Medicine,DOC128,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-20,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000169,P144869,2025-01-29,CAD,Cardiology,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-29,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000170,P141002,2026/01/20,Bronchitis acute,General Medicine,DOC109,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-20,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000171,P105117,2025-10-05,High Blood Pressure,Cardiology,DOC110,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-05,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000172,P117099,2025-06-23,,Cardiology,DOC138,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-23,Unspecified / General Consultation,Cardiology,Follow-Up
+OPD2000173,P131881,05/26/2026,type 2 diabetes,Endocrinology,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-26,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000174,P162719,2026-03-04,Acute Gastroenteritis (AGE),Gastroenterology,DOC112,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-04,Gastroenteritis,Gastroenterology,Emergency
+OPD2000175,P157650,30/09/2026,Angina Pectoris,Cardiology,DOC155,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-30,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000176,P131253,2025-06-29,HTN,Cardiology,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-29,Essential Hypertension,Cardiology,Consultation
+OPD2000177,P111877,2025-06-04,Bronchitis acute,General Medicine,DOC127,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-04,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000178,P128692,12/11/2025,Osteoarthritis of lumbar spine,Orthopedics,DOC153,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-11,Osteoarthritis,Orthopedics,Consultation
+OPD2000179,P162170,09/07/2025,HTN,Cardiology,DOC126,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-07,Essential Hypertension,Cardiology,Consultation
+OPD2000180,P154928,2025-05-22,COPD with acute exacerbation,Pulmonology,DOC128,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-22,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000181,P145888,2026-01-08,Diabetic Nephropathy / CKD,Nephrology,DOC126,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-08,Chronic Kidney Disease,Nephrology,Routine Checkup
+OPD2000182,P125681,2026-09-24,High Blood Pressure,Cardiology,DOC124,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-24,Essential Hypertension,Cardiology,Consultation
+OPD2000183,P100582,11/12/2025,Type 2 Diabetes Mellitus,Endocrinology,DOC101,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-12,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000184,P139493,2026-04-18,T2DM,Endocrinology,DOC134,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-18,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000185,P164671,2025-11-22,HTN,Cardiology,DOC142,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-22,Essential Hypertension,Cardiology,Follow-Up
+OPD2000186,P103396,2025-02-15,asthma,Pulmonology,DOC149,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-15,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000187,P135753,09/04/2025,Degenerative joint disease,Orthopedics,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-04,Osteoarthritis,Orthopedics,Consultation
+OPD2000188,P107235,29/03/2025,asthma bronchiale,Pulmonology,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-29,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000189,P108798,2025-11-10,Diabetic Nephropathy / CKD,Nephrology,DOC123,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-10,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000190,P128739,2026/10/10,COPD with acute exacerbation,Pulmonology,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-10,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000191,P132210,2025-02-27,CAD,Cardiology,DOC151,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-27,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000192,P147908,2025-02-02,Hypertension (primary),Cardiology,DOC131,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-02,Essential Hypertension,Cardiology,Consultation
+OPD2000193,P125530,2026-06-12,Annual Wellness Exam,General Medicine,DOC136,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-12,Routine Health Checkup,General Medicine,Routine Checkup
+OPD2000194,P140294,2026-10-23,Systemic Hypertension,Cardiology,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-23,Essential Hypertension,Cardiology,Follow-Up
+OPD2000195,P125765,2026-10-18,T2DM,Endocrinology,DOC152,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-18,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000196,P128511,01/12/2025,HTN,Cardiology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-12,Essential Hypertension,Cardiology,Consultation
+OPD2000197,P148506,16/12/2025,Diabetic Nephropathy / CKD,Nephrology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-16,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000198,P127202,2026/05/04,Coronary Atherosclerosis,Orthopedics,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-04,Coronary Artery Disease,Orthopedics,Follow-Up
+OPD2000199,P111217,22/04/2025,Diabetes Mellitus Type II,Endocrinology,DOC140,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-22,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000200,P158000,2026-10-22,T2DM,Endocrinology,DOC148,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-22,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000201,P146559,2026-07-22,Coronary Artery Disease,Cardiology,DOC156,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-22,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000202,P161322,2026/07/04,Bronchitis acute,General Medicine,DOC122,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-04,Acute Bronchitis,General Medicine,Consultation
+OPD2000203,P144214,2025-11-22,Routine Health Checkup,General Medicine,DOC153,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-22,Routine Health Checkup,General Medicine,Consultation
+OPD2000204,P141902,2025-11-20,ASTHMA BRONCHIALE,Pulmonology,DOC107,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-20,Bronchial Asthma / COPD,Pulmonology,Routine Checkup
+OPD2000205,P141593,2026-08-16,HTN,Cardiology,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-16,Essential Hypertension,Cardiology,Follow-Up
+OPD2000206,P148639,2026-06-25,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC130,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-25,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000207,P112335,2025/09/25,osteoarthritis knee,Orthopedics,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-25,Osteoarthritis,Orthopedics,Consultation
+OPD2000208,P109577,01/04/2026,Viral Fever,General Medicine,DOC102,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-04,Viral Fever / PUO,General Medicine,Emergency
+OPD2000209,P116842,2026-05-23,CAD,Cardiology,DOC110,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-23,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000210,P152556,2026-06-18,Coronary Artery Disease,Cardiology,DOC131,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-18,Coronary Artery Disease,Cardiology,Consultation
+OPD2000211,P100262,18/05/2026,Bronchial Asthma,Pulmonology,DOC126,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-18,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000212,P142283,09/16/2026,Osteoarthritis Knee,Orthopedics,DOC151,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-16,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000213,P105234,2026-10-10,Type 2 Diabetes Mellitus,Endocrinology,DOC137,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-10,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000214,P156325,2026-03-18,CHEST INFECTION / BRONCHITIS,General Medicine,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-18,Acute Bronchitis,General Medicine,Consultation
+OPD2000215,P122418,02/03/2026,Coronary Artery Disease,Cardiology,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-03,Coronary Artery Disease,Cardiology,Consultation
+OPD2000216,P157198,2026-03-21,Annual Wellness Exam,Cardiology,DOC114,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-21,Routine Health Checkup,Cardiology,Follow-Up
+OPD2000217,P149645,2026-01-15,Osteoarthritis of lumbar spine,Orthopedics,DOC119,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-15,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000218,P145384,2026/01/19,Acute Bronchitis,General Medicine,DOC105,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-19,Acute Bronchitis,General Medicine,Consultation
+OPD2000219,P107793,2025-08-06,HTN,Cardiology,DOC140,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-06,Essential Hypertension,Cardiology,Consultation
+OPD2000220,P137292,2026-05-19,Dengue fever (seronegative),General Medicine,DOC106,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-19,Viral Fever / PUO,General Medicine,Consultation
+OPD2000221,P123202,01/01/2025,Diabetic Nephropathy / CKD,Nephrology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-01,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000222,P129099,2025-09-26,Executive Health Screening,Pulmonology,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-26,Routine Health Checkup,Pulmonology,Consultation
+OPD2000223,P116737,19/06/2026,Degenerative joint disease,Orthopedics,DOC140,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-19,Osteoarthritis,Orthopedics,Emergency
+OPD2000224,P104363,2025-05-20,Bronchitis acute,Endocrinology,DOC105,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-20,Acute Bronchitis,Endocrinology,Consultation
+OPD2000225,P154905,2025-05-07,HTN,Cardiology,DOC127,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-07,Essential Hypertension,Cardiology,Consultation
+OPD2000226,P163848,2026-05-14,Acute Gastroenteritis (AGE),Gastroenterology,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-14,Gastroenteritis,Gastroenterology,Consultation
+OPD2000227,P124479,15/07/2026,Acute febrile illness,General Medicine,DOC154,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-15,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000228,P150432,2025-09-23,Asthma bronchiale,Pulmonology,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-23,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000229,P106052,09/30/2025,Bronchitis acute,General Medicine,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-30,Acute Bronchitis,General Medicine,Consultation
+OPD2000230,P102639,2025-06-13,Hypertension (primary),Cardiology,DOC129,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-13,Essential Hypertension,Cardiology,Emergency
+OPD2000231,P106638,14/10/2026,Type 2 Diabetes Mellitus,Endocrinology,DOC140,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-14,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000232,P123778,04/13/2025,OA bilateral knees,Orthopedics,DOC142,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-13,Osteoarthritis,Orthopedics,Consultation
+OPD2000233,P140871,12/11/2025,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-11,Other Medical Condition,Pulmonology,Follow-Up
+OPD2000234,P137999,2025-09-24,type 2 diabetes,Endocrinology,DOC159,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-24,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000235,P156223,2025-01-01,type 2 diabetes,Endocrinology,DOC108,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-01,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000236,P116968,2026-06-17,Coronary Atherosclerosis,Nephrology,DOC114,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-17,Coronary Artery Disease,Nephrology,Consultation
+OPD2000237,P109959,2025-04-15,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC115,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-15,Other Medical Condition,Pulmonology,Consultation
+OPD2000238,P143231,2025-04-06,type 2 diabetes,Endocrinology,DOC142,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-06,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000239,P157356,23/10/2026,Hypertension (primary),Cardiology,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-23,Essential Hypertension,Cardiology,Consultation
+OPD2000240,P156259,14/11/2025,Essential Hypertension,Cardiology,DOC159,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-14,Essential Hypertension,Cardiology,Follow-Up
+OPD2000241,P144459,31/10/2025,degenerative joint disease,Orthopedics,DOC142,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-31,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000242,P139821,2026-10-12,CHRONIC KIDNEY DISEASE - STAGE 3,Neurology,DOC124,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-12,Chronic Kidney Disease,Neurology,Consultation
+OPD2000243,P100874,2026-01-21,Acute Gastroenteritis (AGE),Pulmonology,DOC125,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-21,Gastroenteritis,Pulmonology,Consultation
+OPD2000244,P136627,13/03/2026,Acute Bronchitis,General Medicine,DOC146,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-13,Acute Bronchitis,General Medicine,Consultation
+OPD2000245,P123349,03/02/2025,T2DM,Endocrinology,DOC135,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-02,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000246,P159008,2026-08-13,High Blood Pressure,Cardiology,DOC151,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-13,Essential Hypertension,Cardiology,Follow-Up
+OPD2000247,P151172,2025-01-05,Diabetes Mellitus - uncontrolled,Endocrinology,DOC105,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-05,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000248,P113714,2025-10-26,Ischemic Heart Disease (IHD),Cardiology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-26,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000249,P101423,2025-04-19,Food poisoning / acute colitis,Cardiology,DOC118,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-19,Gastroenteritis,Cardiology,Routine Checkup
+OPD2000250,P110375,2025/06/30,Coronary Atherosclerosis,Cardiology,DOC114,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-30,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000251,P149202,09/11/2025,Diabetes Mellitus - uncontrolled,Endocrinology,DOC114,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-11,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000252,P108391,2025-03-07,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-07,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000253,P100003,2025-10-04,Gastroenteritis with mild dehydration,Gastroenterology,DOC143,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-04,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000254,P152837,06/01/2026,Chest infection / bronchitis,General Medicine,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-01,Acute Bronchitis,General Medicine,Consultation
+OPD2000255,P120359,26/09/2025,Diabetes Mellitus - uncontrolled,Endocrinology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-26,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000256,P126127,2026-05-15,Type 2 Diabetes Mellitus,Endocrinology,DOC116,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-15,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000257,P157550,2026-03-11,Ischemic Heart Disease (IHD),General Medicine,DOC147,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-11,Coronary Artery Disease,General Medicine,Routine Checkup
+OPD2000258,P138674,06/09/2025,SYSTEMIC HYPERTENSION,Cardiology,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-09,Essential Hypertension,Cardiology,Consultation
+OPD2000259,P155437,2025/04/26,Acute Bronchitis,Endocrinology,DOC158,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-26,Acute Bronchitis,Endocrinology,Follow-Up
+OPD2000260,P103246,06/09/2026,,General Medicine,DOC141,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-09,Unspecified / General Consultation,General Medicine,Emergency
+OPD2000261,P119857,09/13/2026,Non-insulin dependent diabetes mellitus (NIDDM),Nephrology,DOC103,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-13,Type 2 Diabetes Mellitus,Nephrology,Consultation
+OPD2000262,P140182,05/26/2025,Essential Hypertension,Cardiology,DOC121,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-26,Essential Hypertension,Cardiology,Follow-Up
+OPD2000263,P100499,2025-05-13,Chronic Kidney Disease - Stage 3,Neurology,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-13,Chronic Kidney Disease,Neurology,Consultation
+OPD2000264,P149384,2026-09-01,gastroenteritis with mild dehydration,Gastroenterology,DOC151,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-01,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000265,P103354,2025-06-07,CKD Stage 3,Nephrology,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-07,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000266,P117309,2025-06-10,,Gastroenterology,DOC122,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-10,Unspecified / General Consultation,Gastroenterology,Follow-Up
+OPD2000267,P138358,19/01/2026,Type 2 Diabetes Mellitus,Endocrinology,DOC125,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-19,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000268,P112838,31/08/2026,Essential Hypertension,Endocrinology,DOC103,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-31,Essential Hypertension,Endocrinology,Follow-Up
+OPD2000269,P148644,2026-06-21,Infectious diarrhea,Gastroenterology,DOC154,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-21,Gastroenteritis,Gastroenterology,Consultation
+OPD2000270,P120514,2026-09-16,Asthma bronchiale,Pulmonology,DOC124,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-16,Bronchial Asthma / COPD,Pulmonology,Routine Checkup
+OPD2000271,P146838,2026-05-03,,Endocrinology,DOC115,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-03,Unspecified / General Consultation,Endocrinology,Emergency
+OPD2000272,P163081,2025-01-28,CORONARY ATHEROSCLEROSIS,Cardiology,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-28,Coronary Artery Disease,Cardiology,Consultation
+OPD2000273,P144488,2026-09-08,Essential Hypertension,Cardiology,DOC131,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-08,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000274,P107927,2025-09-20,type 2 diabetes,Endocrinology,DOC119,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-20,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000275,P102130,05/17/2026,food poisoning / acute colitis,Neurology,DOC128,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-17,Gastroenteritis,Neurology,Routine Checkup
+OPD2000276,P101609,2025-11-24,Systemic Hypertension,Cardiology,DOC140,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-24,Essential Hypertension,Cardiology,Consultation
+OPD2000277,P148786,2025-08-05,T2DM,Endocrinology,DOC103,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-05,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000278,P136065,2026-08-24,Bronchial Asthma,Pulmonology,DOC144,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-24,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000279,P148065,2025-09-28,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC137,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-28,Other Medical Condition,Pulmonology,Routine Checkup
+OPD2000280,P135179,2025-09-29,t2dm,Endocrinology,DOC149,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-29,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000281,P133682,2026-04-23,Diabetes Mellitus Type II,Endocrinology,DOC143,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-23,Type 2 Diabetes Mellitus,Endocrinology,Routine Checkup
+OPD2000282,P158105,13/06/2025,VIRAL FEVER,General Medicine,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-13,Viral Fever / PUO,General Medicine,Consultation
+OPD2000283,P164657,2025-05-02,HTN,General Medicine,DOC138,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-02,Essential Hypertension,General Medicine,Consultation
+OPD2000284,P128754,2025-11-15,Osteoarthritis of lumbar spine,Endocrinology,DOC127,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-15,Osteoarthritis,Endocrinology,Consultation
+OPD2000285,P162496,11/06/2026,systemic hypertension,Cardiology,DOC114,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-11-06,Essential Hypertension,Cardiology,Follow-Up
+OPD2000286,P154075,2026-04-29,Coronary Atherosclerosis,Cardiology,DOC137,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-29,Coronary Artery Disease,Cardiology,Consultation
+OPD2000287,P160724,2025-12-31,Diabetes Mellitus Type II,Endocrinology,DOC107,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-31,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000288,P127557,2026-02-22,PYREXIA OF UNKNOWN ORIGIN (PUO),General Medicine,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-22,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000289,P117955,2026-06-27,high blood pressure,Cardiology,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-27,Essential Hypertension,Cardiology,Consultation
+OPD2000290,P143615,2025/03/15,HTN,Cardiology,DOC158,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-15,Essential Hypertension,Cardiology,Follow-Up
+OPD2000291,P109373,2026/03/08,diabetes mellitus type ii,Endocrinology,DOC111,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-08,Type 2 Diabetes Mellitus,Endocrinology,Routine Checkup
+OPD2000292,P137169,2026-09-16,Diabetes Mellitus - uncontrolled,Pulmonology,DOC107,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-16,Type 2 Diabetes Mellitus,Pulmonology,Consultation
+OPD2000293,P132459,24/02/2026,T2DM,Endocrinology,DOC147,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-24,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000294,P148509,2025-02-12,CAD,Cardiology,DOC108,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-12,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000295,P124598,2025-10-15,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC156,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-15,Other Medical Condition,Pulmonology,Consultation
+OPD2000296,P131743,2025-10-04,Coronary Atherosclerosis,Cardiology,DOC102,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-04,Coronary Artery Disease,Cardiology,Consultation
+OPD2000297,P157058,02/22/2026,diabetes mellitus - uncontrolled,Endocrinology,DOC107,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-22,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000298,P150619,2026-10-18,OA bilateral knees,Orthopedics,DOC156,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-18,Osteoarthritis,Orthopedics,Routine Checkup
+OPD2000299,P162019,2026-10-18,Coronary Atherosclerosis,Cardiology,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-18,Coronary Artery Disease,Cardiology,Consultation
+OPD2000300,P134803,10/25/2026,Diabetes Mellitus Type II,Endocrinology,DOC104,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-25,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000301,P119004,2026-05-10,Osteoarthritis of lumbar spine,Orthopedics,DOC114,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-10,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000302,P115515,18/10/2026,CAD,Cardiology,DOC122,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-18,Coronary Artery Disease,Cardiology,Consultation
+OPD2000303,P158450,07/02/2026,diabetes mellitus - uncontrolled,Nephrology,DOC157,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-02,Type 2 Diabetes Mellitus,Nephrology,Follow-Up
+OPD2000304,P104841,2026-09-08,Acute febrile illness,General Medicine,DOC115,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-08,Viral Fever / PUO,General Medicine,Consultation
+OPD2000305,P122655,2026-04-22,Degenerative joint disease,Orthopedics,DOC157,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-22,Osteoarthritis,Orthopedics,Routine Checkup
+OPD2000306,P141432,2026-09-02,Pyrexia of Unknown Origin (PUO),General Medicine,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-02,Viral Fever / PUO,General Medicine,Consultation
+OPD2000307,P140758,02/04/2025,HTN,Cardiology,DOC131,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-04,Essential Hypertension,Cardiology,Consultation
+OPD2000308,P138338,2025-03-03,COPD with acute exacerbation,Pulmonology,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-03,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000309,P106501,2025/03/27,Coronary Artery Disease,Cardiology,DOC123,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-27,Coronary Artery Disease,Cardiology,Consultation
+OPD2000310,P126355,2025-01-22,Osteoarthritis of lumbar spine,Orthopedics,DOC149,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-22,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000311,P118082,11/28/2025,Acute Gastroenteritis (AGE),Gastroenterology,DOC134,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-28,Gastroenteritis,Gastroenterology,Consultation
+OPD2000312,P126813,2026-08-11,Angina Pectoris,Cardiology,DOC118,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-11,Coronary Artery Disease,Cardiology,Consultation
+OPD2000313,P110004,2025-02-26,General health evaluation,General Medicine,DOC112,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-26,Routine Health Checkup,General Medicine,Consultation
+OPD2000314,P142195,2026-05-08,DENGUE FEVER (SERONEGATIVE),General Medicine,DOC131,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-08,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000315,P148605,2025-08-30,Osteoarthritis of lumbar spine,Orthopedics,DOC142,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-30,Osteoarthritis,Orthopedics,Consultation
+OPD2000316,P121552,2025-09-02,Angina Pectoris,Gastroenterology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-02,Coronary Artery Disease,Gastroenterology,Follow-Up
+OPD2000317,P125530,11/30/2025,Chronic Renal Failure (CRF),Nephrology,DOC105,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-30,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000318,P150509,04/28/2025,HTN,Cardiology,DOC152,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-28,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000319,P160237,2026-01-27,Viral Fever,General Medicine,DOC112,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-27,Viral Fever / PUO,General Medicine,Consultation
+OPD2000320,P136218,01/27/2025,Type 2 Diabetes Mellitus,Endocrinology,DOC143,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-27,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000321,P130003,2025-01-06,Asthma bronchiale,Pulmonology,DOC143,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-06,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000322,P116480,2026-02-25,Coronary Atherosclerosis,Cardiology,DOC155,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-25,Coronary Artery Disease,Cardiology,Consultation
+OPD2000323,P112500,2026-09-02,ACUTE FEBRILE ILLNESS,General Medicine,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-02,Viral Fever / PUO,General Medicine,Consultation
+OPD2000324,P161358,26/04/2026,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC106,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-26,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000325,P111217,05/09/2025,COPD with acute exacerbation,Pulmonology,DOC148,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-09,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000326,P143173,2025-10-12,Osteoarthritis of lumbar spine,Orthopedics,DOC113,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-12,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000327,P124938,01/15/2025,Type 2 Diabetes Mellitus,Endocrinology,DOC147,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-15,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000328,P121648,2025-02-12,Type 2 Diabetes Mellitus,Endocrinology,DOC127,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-12,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000329,P139690,2026-07-12,DIABETIC NEPHROPATHY / CKD,Nephrology,DOC159,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-12,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000330,P117495,2026-05-06,high blood pressure,Cardiology,DOC136,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-06,Essential Hypertension,Cardiology,Follow-Up
+OPD2000331,P136339,2026-08-09,Routine Health Checkup,General Medicine,DOC101,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-09,Routine Health Checkup,General Medicine,Consultation
+OPD2000332,P131628,2026-08-15,CAD,Cardiology,DOC124,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-15,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000333,P128099,2025-09-04,Bronchitis acute,General Medicine,DOC134,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-04,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000334,P148175,2026-10-27,CKD Stage 3,Nephrology,DOC130,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-27,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000335,P152003,2025-12-15,Hypertension (primary),Gastroenterology,DOC136,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-15,Essential Hypertension,Gastroenterology,Follow-Up
+OPD2000336,P156271,2026-06-04,Essential Hypertension,Cardiology,DOC154,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-04,Essential Hypertension,Cardiology,Consultation
+OPD2000337,P138148,2025-10-21,General health evaluation,General Medicine,DOC141,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-21,Routine Health Checkup,General Medicine,Follow-Up
+OPD2000338,P152658,2026-03-19,Acute Bronchitis,General Medicine,DOC155,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-19,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000339,P156542,09/20/2025,Essential Hypertension,Cardiology,DOC138,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-20,Essential Hypertension,Cardiology,Consultation
+OPD2000340,P156424,2026-03-18,Systemic Hypertension,Cardiology,DOC110,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-18,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000341,P154374,05/10/2025,Asthma,Pulmonology,DOC139,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-10,Bronchial Asthma / COPD,Pulmonology,Routine Checkup
+OPD2000342,P140962,2025-03-21,Bronchitis acute,Gastroenterology,DOC131,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-21,Acute Bronchitis,Gastroenterology,Follow-Up
+OPD2000343,P153174,2026-08-01,Coronary Atherosclerosis,Cardiology,DOC125,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-01,Coronary Artery Disease,Cardiology,Emergency
+OPD2000344,P130339,2025-12-14,T2DM,Endocrinology,DOC139,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-14,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000345,P150782,2025-08-18,COPD with acute exacerbation,Pulmonology,DOC128,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-18,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000346,P110150,2025-05-04,type 2 diabetes,Endocrinology,DOC102,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-04,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000347,P159623,08/22/2026,pyrexia of unknown origin (puo),General Medicine,DOC138,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-22,Viral Fever / PUO,General Medicine,Consultation
+OPD2000348,P113710,05/01/2025,angina pectoris,Cardiology,DOC134,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-01,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000349,P114833,2026-02-10,T2DM,Endocrinology,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-10,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000350,P111554,08/25/2025,Acute Bronchitis,Endocrinology,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-25,Acute Bronchitis,Endocrinology,Consultation
+OPD2000351,P146583,01/08/2025,Essential Hypertension,Cardiology,DOC124,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-08,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000352,P115608,2025-09-04,Diabetes Mellitus Type II,Endocrinology,DOC154,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-04,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000353,P139339,25/09/2025,Viral Fever,General Medicine,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-25,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000354,P123121,2025-01-11,Diabetes Mellitus - uncontrolled,Endocrinology,DOC160,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-11,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000355,P120260,2026-08-11,Systemic Hypertension,Cardiology,DOC120,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-11,Essential Hypertension,Cardiology,Emergency
+OPD2000356,P103953,08/08/2026,Essential Hypertension,Cardiology,DOC146,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-08,Essential Hypertension,Cardiology,Consultation
+OPD2000357,P119348,2025-10-02,General health evaluation,General Medicine,DOC133,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-02,Routine Health Checkup,General Medicine,Consultation
+OPD2000358,P107045,2026-10-08,Acute febrile illness,General Medicine,DOC134,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-08,Viral Fever / PUO,General Medicine,Follow-Up
+OPD2000359,P112366,2025-04-01,Systemic Hypertension,Cardiology,DOC154,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-01,Essential Hypertension,Cardiology,Follow-Up
+OPD2000360,P117888,2026-04-25,Ischemic Heart Disease (IHD),Cardiology,DOC104,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-25,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000361,P127343,2025-07-05,Bronchitis acute,General Medicine,DOC115,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-05,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000362,P136747,2025-10-16,OA bilateral knees,Orthopedics,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-16,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000363,P125493,2025-11-03,Bronchitis acute,General Medicine,DOC141,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-03,Acute Bronchitis,General Medicine,Consultation
+OPD2000364,P157235,2026-04-16,Bronchial Asthma,Pulmonology,DOC136,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-16,Bronchial Asthma / COPD,Pulmonology,Routine Checkup
+OPD2000365,P148227,2025-10-20,Diabetic Nephropathy / CKD,Nephrology,DOC143,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-20,Chronic Kidney Disease,Nephrology,Emergency
+OPD2000366,P100829,2026-03-30,Asthma bronchiale,Pulmonology,DOC117,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-30,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000367,P126050,2026-09-05,Acute Bronchitis,General Medicine,DOC148,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-05,Acute Bronchitis,General Medicine,Consultation
+OPD2000368,P148587,2026-01-30,Essential Hypertension,Cardiology,DOC138,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-30,Essential Hypertension,Cardiology,Follow-Up
+OPD2000369,P151273,2026-10-12,Coronary Artery Disease,Cardiology,DOC105,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-12,Coronary Artery Disease,Cardiology,Consultation
+OPD2000370,P125975,2025-03-19,High Blood Pressure,Cardiology,DOC136,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-19,Essential Hypertension,Cardiology,Consultation
+OPD2000371,P157227,2026-07-10,Acute Gastroenteritis (AGE),Orthopedics,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-10,Gastroenteritis,Orthopedics,Follow-Up
+OPD2000372,P120937,08/03/2026,Chest infection / bronchitis,General Medicine,DOC155,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-03,Acute Bronchitis,General Medicine,Consultation
+OPD2000373,P137812,11/12/2025,Gastroenteritis with mild dehydration,Gastroenterology,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-12,Gastroenteritis,Gastroenterology,Consultation
+OPD2000374,P148232,2025-02-07,Ischemic Heart Disease (IHD),Cardiology,DOC135,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-07,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000375,P105792,2026/06/14,Bronchial Asthma,Pulmonology,DOC129,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-14,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000376,P108852,2025-07-29,Dengue fever (seronegative),General Medicine,DOC158,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-29,Viral Fever / PUO,General Medicine,Emergency
+OPD2000377,P130567,21/12/2025,Coronary Atherosclerosis,Cardiology,DOC129,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-21,Coronary Artery Disease,Cardiology,Consultation
+OPD2000378,P152702,21/06/2026,ESSENTIAL HYPERTENSION,Cardiology,DOC158,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-21,Essential Hypertension,Cardiology,Consultation
+OPD2000379,P103053,18/07/2026,Acute Bronchitis,General Medicine,DOC129,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-18,Acute Bronchitis,General Medicine,Routine Checkup
+OPD2000380,P126568,2026-02-05,T2DM,Endocrinology,DOC145,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-05,Type 2 Diabetes Mellitus,Endocrinology,Routine Checkup
+OPD2000381,P144733,2025-03-31,Systemic Hypertension,Cardiology,DOC127,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-31,Essential Hypertension,Cardiology,Consultation
+OPD2000382,P162194,04/01/2026,COPD with acute exacerbation,Pulmonology,DOC142,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-01,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000383,P161417,10/05/2025,HTN,Cardiology,DOC153,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-05,Essential Hypertension,Cardiology,Consultation
+OPD2000384,P141622,2025-10-09,Viral Fever,General Medicine,DOC110,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-09,Viral Fever / PUO,General Medicine,Consultation
+OPD2000385,P111220,2025-09-04,Chest infection / bronchitis,General Medicine,DOC114,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-04,Acute Bronchitis,General Medicine,Consultation
+OPD2000386,P126531,2026-09-08,ANNUAL WELLNESS EXAM,General Medicine,DOC141,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-08,Routine Health Checkup,General Medicine,Follow-Up
+OPD2000387,P152338,2025-05-26,OA bilateral knees,Orthopedics,DOC120,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-26,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000388,P120037,12/20/2025,Executive Health Screening,General Medicine,DOC112,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-20,Routine Health Checkup,General Medicine,Consultation
+OPD2000389,P115100,14/05/2025,HTN,Cardiology,DOC125,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-14,Essential Hypertension,Cardiology,Emergency
+OPD2000390,P160685,2025-07-26,Chronic Kidney Disease - Stage 3,Gastroenterology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-26,Chronic Kidney Disease,Gastroenterology,Follow-Up
+OPD2000391,P147499,14/01/2025,Non-insulin dependent diabetes mellitus (NIDDM),Neurology,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-14,Type 2 Diabetes Mellitus,Neurology,Consultation
+OPD2000392,P135380,06/04/2026,Type 2 Diabetes Mellitus,Endocrinology,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-04,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000393,P128388,10/24/2026,Systemic Hypertension,Cardiology,DOC156,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-24,Essential Hypertension,Cardiology,Routine Checkup
+OPD2000394,P136168,2025-01-23,Bronchial Asthma,Pulmonology,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-23,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000395,P147199,2025-02-04,CKD Stage 3,Nephrology,DOC128,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-04,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000396,P109660,2025-04-30,Ischemic Heart Disease (IHD),Cardiology,DOC150,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-30,Coronary Artery Disease,Cardiology,Consultation
+OPD2000397,P110558,2026/02/26,Pyrexia of Unknown Origin (PUO),General Medicine,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-26,Viral Fever / PUO,General Medicine,Consultation
+OPD2000398,P146815,2026-01-10,COPD with acute exacerbation,Pulmonology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-10,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000399,P139838,2025-03-08,Hypertension (primary),Cardiology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-08,Essential Hypertension,Cardiology,Follow-Up
+OPD2000400,P104233,2025-09-02,Angina Pectoris,Cardiology,DOC151,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-02,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000401,P155293,2025-01-12,Bronchial Asthma,Pulmonology,DOC116,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-12,Bronchial Asthma / COPD,Pulmonology,Follow-Up
+OPD2000402,P135888,2026-07-03,Degenerative joint disease,Orthopedics,DOC109,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-03,Osteoarthritis,Orthopedics,Consultation
+OPD2000403,P113728,2026-07-18,Chest infection / bronchitis,General Medicine,DOC155,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-18,Acute Bronchitis,General Medicine,Routine Checkup
+OPD2000404,P158884,2026-01-26,Diabetes Mellitus - uncontrolled,Endocrinology,DOC133,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-26,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000405,P137928,2025-07-04,Diabetes Mellitus - uncontrolled,Endocrinology,DOC132,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-04,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000406,P163902,2026-04-09,oa bilateral knees,Orthopedics,DOC152,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-09,Osteoarthritis,Orthopedics,Emergency
+OPD2000407,P120150,2026-01-05,Hypertension (primary),Cardiology,DOC152,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-05,Essential Hypertension,Cardiology,Follow-Up
+OPD2000408,P130633,2025-05-16,Chest infection / bronchitis,General Medicine,DOC116,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-16,Acute Bronchitis,General Medicine,Consultation
+OPD2000409,P109098,2025-03-27,systemic hypertension,Cardiology,DOC103,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-27,Essential Hypertension,Cardiology,Follow-Up
+OPD2000410,P152264,09/22/2025,Infectious diarrhea,Gastroenterology,DOC135,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-22,Gastroenteritis,Gastroenterology,Consultation
+OPD2000411,P110159,2025-12-29,Asthma,Pulmonology,DOC135,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-29,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000412,P122494,12/10/2025,COPD with acute exacerbation,Pulmonology,DOC116,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-10,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000413,P120199,2025-08-16,Pyrexia of Unknown Origin (PUO),General Medicine,DOC145,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-16,Viral Fever / PUO,General Medicine,Consultation
+OPD2000414,P143159,20/02/2026,Food poisoning / acute colitis,Gastroenterology,DOC135,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-20,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000415,P113857,11/01/2025,Osteoarthritis Knee,Orthopedics,DOC146,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-01,Osteoarthritis,Orthopedics,Consultation
+OPD2000416,P140634,2025-06-13,Chronic Renal Failure (CRF),Nephrology,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-13,Chronic Kidney Disease,Nephrology,Consultation
+OPD2000417,P159148,2026-03-03,Ischemic Heart Disease (IHD),Cardiology,DOC125,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-03,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000418,P153445,2025-02-09,Coronary Artery Disease,Cardiology,DOC148,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-09,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000419,P130922,03/06/2026,Coronary Atherosclerosis,Cardiology,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-06,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000420,P116859,10/09/2026,,Gastroenterology,DOC157,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-09,Unspecified / General Consultation,Gastroenterology,Consultation
+OPD2000421,P107861,08/09/2026,copd with acute exacerbation,Pulmonology,DOC103,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-09,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000422,P138362,2025-03-08,Infectious diarrhea,Gastroenterology,DOC154,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-08,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000423,P134418,2025-06-03,Systemic Hypertension,Cardiology,DOC158,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-03,Essential Hypertension,Cardiology,Consultation
+OPD2000424,P123765,10/05/2026,Routine Health Checkup,General Medicine,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-05,Routine Health Checkup,General Medicine,Consultation
+OPD2000425,P145726,09/13/2025,routine health checkup,General Medicine,DOC156,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-13,Routine Health Checkup,General Medicine,Consultation
+OPD2000426,P109718,2026-05-11,Diabetes Mellitus Type II,Endocrinology,DOC147,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-05-11,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000427,P139071,2025-02-08,High Blood Pressure,Cardiology,DOC140,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-08,Essential Hypertension,Cardiology,Follow-Up
+OPD2000428,P104815,03/06/2025,Diabetes Mellitus Type II,Endocrinology,DOC112,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-06,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000429,P109905,2026-04-22,HTN,Pulmonology,DOC117,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-22,Essential Hypertension,Pulmonology,Follow-Up
+OPD2000430,P159201,2025-05-01,COPD with acute exacerbation,Pulmonology,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-01,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000431,P125747,2025-10-28,Acute Gastroenteritis (AGE),Gastroenterology,DOC158,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-28,Gastroenteritis,Gastroenterology,Consultation
+OPD2000432,P136430,2025-04-19,Gastroenteritis with mild dehydration,Gastroenterology,DOC111,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-19,Gastroenteritis,Gastroenterology,Follow-Up
+OPD2000433,P148768,2025-10-16,CAD,Cardiology,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-16,Coronary Artery Disease,Cardiology,Consultation
+OPD2000434,P108625,2026-06-29,High Blood Pressure,Cardiology,DOC143,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-29,Essential Hypertension,Cardiology,Follow-Up
+OPD2000435,P149678,10/05/2025,Ischemic Heart Disease (IHD),Cardiology,DOC114,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-05,Coronary Artery Disease,Cardiology,Consultation
+OPD2000436,P102463,08/16/2025,Ischemic Heart Disease (IHD),Cardiology,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-16,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000437,P164920,2026-01-02,Ischemic Heart Disease (IHD),Cardiology,DOC154,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-02,Coronary Artery Disease,Cardiology,Routine Checkup
+OPD2000438,P155748,10/02/2025,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC145,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-02,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000439,P145499,2026-10-13,Coronary Artery Disease,Cardiology,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-13,Coronary Artery Disease,Cardiology,Consultation
+OPD2000440,P133794,2026/10/19,Routine Health Checkup,General Medicine,DOC115,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-19,Routine Health Checkup,General Medicine,Consultation
+OPD2000441,P151263,02/22/2025,OA bilateral knees,Orthopedics,DOC117,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-22,Osteoarthritis,Orthopedics,Emergency
+OPD2000442,P130064,2025-04-12,Chest infection / bronchitis,Neurology,DOC137,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-12,Acute Bronchitis,Neurology,Consultation
+OPD2000443,P107041,20/06/2025,High Blood Pressure,Cardiology,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-20,Essential Hypertension,Cardiology,Consultation
+OPD2000444,P150222,20/11/2025,Bronchitis acute,Cardiology,DOC144,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-20,Acute Bronchitis,Cardiology,Consultation
+OPD2000445,P156733,2026-01-06,CKD Stage 3,Nephrology,DOC126,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-06,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000446,P119085,2026-09-16,Acute Bronchitis,General Medicine,DOC152,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-09-16,Acute Bronchitis,General Medicine,Consultation
+OPD2000447,P129084,2026-01-27,Executive Health Screening,Cardiology,DOC148,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-27,Routine Health Checkup,Cardiology,Follow-Up
+OPD2000448,P104275,2026-08-07,Angina Pectoris,Cardiology,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-07,Coronary Artery Disease,Cardiology,Consultation
+OPD2000449,P104373,2025-06-06,Acute Gastroenteritis (AGE),Gastroenterology,DOC116,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-06,Gastroenteritis,Gastroenterology,Consultation
+OPD2000450,P131947,2025/05/07,OA bilateral knees,Orthopedics,DOC140,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-07,Osteoarthritis,Orthopedics,Consultation
+OPD2000451,P158513,2025-11-24,Ischemic Heart Disease (IHD),Cardiology,DOC117,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-24,Coronary Artery Disease,Cardiology,Consultation
+OPD2000452,P119960,2026/06/04,COPD with acute exacerbation,Pulmonology,DOC158,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-04,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000453,P115653,2025-03-22,ischemic heart disease (ihd),Cardiology,DOC120,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-22,Coronary Artery Disease,Cardiology,Consultation
+OPD2000454,P109831,2026-07-31,Ischemic Heart Disease (IHD),Cardiology,DOC158,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-31,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000455,P164940,2026-10-29,Osteoarthritis of lumbar spine,Orthopedics,DOC143,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-29,Osteoarthritis,Orthopedics,Routine Checkup
+OPD2000456,P108413,2025-08-13,Osteoarthritis of lumbar spine,Orthopedics,DOC156,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-13,Osteoarthritis,Orthopedics,Consultation
+OPD2000457,P156193,2025-08-11,Annual Wellness Exam,General Medicine,DOC155,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-11,Routine Health Checkup,General Medicine,Follow-Up
+OPD2000458,P117571,2025-03-24,Essential Hypertension,Cardiology,DOC143,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-24,Essential Hypertension,Cardiology,Consultation
+OPD2000459,P161372,24/07/2025,Asthma,Pulmonology,DOC153,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-24,Bronchial Asthma / COPD,Pulmonology,Consultation
+OPD2000460,P119371,2025/10/10,type 2 diabetes,Endocrinology,DOC137,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-10-10,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000461,P117178,2025-08-06,Bronchitis acute,General Medicine,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-06,Acute Bronchitis,General Medicine,Follow-Up
+OPD2000462,P162856,2025-01-11,CAD,Cardiology,DOC103,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-11,Coronary Artery Disease,Cardiology,Consultation
+OPD2000463,P139297,2025-01-03,HTN,Cardiology,DOC125,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-03,Essential Hypertension,Cardiology,Follow-Up
+OPD2000464,P131675,2026-04-01,Degenerative joint disease,Orthopedics,DOC128,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-01,Osteoarthritis,Orthopedics,Consultation
+OPD2000465,P108453,2025-01-15,Osteoarthritis of lumbar spine,Orthopedics,DOC108,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-15,Osteoarthritis,Orthopedics,Consultation
+OPD2000466,P138731,2026-02-23,Diabetes Mellitus Type II,Endocrinology,DOC138,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-02-23,Type 2 Diabetes Mellitus,Endocrinology,Follow-Up
+OPD2000467,P113645,11/16/2025,Diabetic Nephropathy / CKD,Nephrology,DOC128,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-16,Chronic Kidney Disease,Nephrology,Emergency
+OPD2000468,P156441,2026-07-26,Acute Bronchitis,General Medicine,DOC119,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-26,Acute Bronchitis,General Medicine,Consultation
+OPD2000469,P115770,2025-05-31,Systemic Hypertension,Cardiology,DOC106,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-31,Essential Hypertension,Cardiology,Follow-Up
+OPD2000470,P154401,31/12/2025,Systemic Hypertension,Cardiology,DOC108,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-31,Essential Hypertension,Cardiology,Follow-Up
+OPD2000471,P110113,15/05/2025,Gastroenteritis with mild dehydration,Gastroenterology,DOC159,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-05-15,Gastroenteritis,Gastroenterology,Consultation
+OPD2000472,P109189,08/29/2025,Infectious diarrhea,Gastroenterology,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-08-29,Gastroenteritis,Gastroenterology,Consultation
+OPD2000473,P102953,2025-02-20,Routine Health Checkup,General Medicine,DOC141,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-20,Routine Health Checkup,General Medicine,Emergency
+OPD2000474,P117494,2026-01-09,Asthma bronchiale,Pulmonology,DOC127,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-09,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000475,P111547,2025-12-19,systemic hypertension,Cardiology,DOC111,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-19,Essential Hypertension,Cardiology,Consultation
+OPD2000476,P112247,2025-01-31,Coronary Atherosclerosis,Cardiology,DOC120,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-31,Coronary Artery Disease,Cardiology,Emergency
+OPD2000477,P114334,2025/07/14,Asthma,Pulmonology,DOC159,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-07-14,Bronchial Asthma / COPD,Pulmonology,Emergency
+OPD2000478,P112432,2025-02-23,Chronic Kidney Disease - Stage 3,Nephrology,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-02-23,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000479,P116032,2026-06-13,OA bilateral knees,Orthopedics,DOC147,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-06-13,Osteoarthritis,Orthopedics,Consultation
+OPD2000480,P134003,2025/03/31,Ischemic Heart Disease (IHD),Cardiology,DOC148,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-31,Coronary Artery Disease,Cardiology,Emergency
+OPD2000481,P100883,2025-11-27,Gastroenteritis with mild dehydration,Cardiology,DOC107,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-11-27,Gastroenteritis,Cardiology,Follow-Up
+OPD2000482,P142044,2025-06-18,Acute febrile illness,Neurology,DOC137,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-06-18,Viral Fever / PUO,Neurology,Follow-Up
+OPD2000483,P122816,2025-04-26,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-26,Other Medical Condition,Pulmonology,Consultation
+OPD2000484,P136553,01/15/2025,COPD with acute exacerbation,Nephrology,DOC107,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-01-15,Bronchial Asthma / COPD,Nephrology,Routine Checkup
+OPD2000485,P142847,2026-07-20,Osteoarthritis Knee,Orthopedics,DOC113,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-20,Osteoarthritis,Orthopedics,Consultation
+OPD2000486,P123460,2026-04-06,Osteoarthritis Knee,Orthopedics,DOC124,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-04-06,Osteoarthritis,Orthopedics,Consultation
+OPD2000487,P124220,2026-10-30,T2DM,Endocrinology,DOC117,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-30,Type 2 Diabetes Mellitus,Endocrinology,Emergency
+OPD2000488,P135424,25/03/2026,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC121,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-25,Other Medical Condition,Pulmonology,Consultation
+OPD2000489,P162791,2026/07/04,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC138,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-04,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000490,P110175,2026-10-06,OA bilateral knees,Orthopedics,DOC150,Routine Checkup,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-10-06,Osteoarthritis,Orthopedics,Routine Checkup
+OPD2000491,P136072,07/04/2026,Chronic Obstructive Pulmonary Disease,Pulmonology,DOC110,Emergency,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-07-04,Other Medical Condition,Pulmonology,Emergency
+OPD2000492,P121406,2025-09-07,coronary artery disease,Cardiology,DOC135,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-09-07,Coronary Artery Disease,Cardiology,Follow-Up
+OPD2000493,P102506,2026-03-05,Diabetes Mellitus Type II,Endocrinology,DOC152,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-05,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000494,P133508,2026/01/28,angina pectoris,Cardiology,DOC139,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-01-28,Coronary Artery Disease,Cardiology,Consultation
+OPD2000495,P128098,08/12/2026,Coronary Atherosclerosis,General Medicine,DOC123,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-08-12,Coronary Artery Disease,General Medicine,Follow-Up
+OPD2000496,P160168,2025-03-13,degenerative joint disease,Pulmonology,DOC134,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-03-13,Osteoarthritis,Pulmonology,Follow-Up
+OPD2000497,P104004,2025-04-11,CKD Stage 3,Nephrology,DOC112,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-11,Chronic Kidney Disease,Nephrology,Follow-Up
+OPD2000498,P100046,2026-03-22,Non-insulin dependent diabetes mellitus (NIDDM),Endocrinology,DOC145,Consultation,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2026-03-22,Type 2 Diabetes Mellitus,Endocrinology,Consultation
+OPD2000499,P161895,2025-04-06,Osteoarthritis of lumbar spine,Orthopedics,DOC119,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-04-06,Osteoarthritis,Orthopedics,Follow-Up
+OPD2000500,P114423,2025-12-24,Acute febrile illness,General Medicine,DOC147,Follow-up,SYNTHETIC_DATA_FOR_INTERNSHIP_STUDY,2025-12-24,Viral Fever / PUO,General Medicine,Follow-Up

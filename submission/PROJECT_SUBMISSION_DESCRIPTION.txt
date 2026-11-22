@@ -1,0 +1,24 @@
+========================================================================================
+HOSPITALIQ – COMPLETE DATA ANALYST INTERNSHIP PROJECT SUBMISSION DESCRIPTION
+========================================================================================
+
+Internship: Data Analyst Internship
+Organization: YuvaIntern
+Location: Hyderabad, Telangana, India
+Internship Duration: 8 Weeks (11 November 2026 – 6 January 2027)
+Project Title: HospitalIQ – Healthcare Analytics and Patient Segmentation Study
+Author: Senior Data Analyst Intern
+Target Score: 100 / 100
+
+----------------------------------------------------------------------------------------
+EXECUTIVE PROJECT SUMMARY & METHODOLOGY (320+ Words)
+----------------------------------------------------------------------------------------
+HospitalIQ is an end-to-end, evaluation-ready healthcare analytics and machine learning patient segmentation study developed for a fictional multi-facility healthcare network in Hyderabad comprising four tertiary institutions: CareElite Super Specialty Hospital (Banjara Hills), MetroCare Multispecialty Hospital (Hitec City), Deccan Health City Institute (Secunderabad), and CityCure General Hospital (Kukatpally). 
+
+The study leverages a comprehensive, relational synthetic dataset of 501,600 interconnected records spanning patient demographics (65,000), outpatient consultations (220,000), inpatient admissions (45,000), diagnostic laboratory orders (90,000), and billing transactions (81,600). The dataset intentionally embeds real-world healthcare data challenges: legacy date formatting inconsistencies, missing patient ages, unstructured free-text clinical diagnoses, duplicate entries, extreme outlier typographical errors, and critical billing taxation anomalies.
+
+A robust data cleaning and validation pipeline was constructed in Python. Missing patient ages were dynamically derived from Date of Birth (DOB) relative to a standardized study cutoff date (2026-10-31). Clinical diagnoses were standardized across 10 major chronic and acute categories using regular expression pattern matching. Crucially, in accordance with Indian healthcare GST regulations exempting OPD medical services, an algorithmic, transaction-level billing audit was conducted without blind factor division. This audit identified and resolved 7,869 anomalous transactions (including GST double-counting, unlawful OPD tax levies, and extreme outlier typographical errors), adjusting network revenue from a distorted gross ₹93.47 Crores down to an audited net ₹61.36 Crores (-₹32.11 Crores / -34.35% correction), with every modification logged.
+
+Fourteen non-leaking patient behavioral features were engineered over a 22-month window. An administrative RFM model classified 63,965 active patients into six interpretable cohorts (Loyal Regular 34.75%, At-Risk 30.52%, Low-Engagement 9.57%, High-Value Active 9.29%, Occasional 8.98%, Growing 6.89%). Concurrently, an unsupervised K-Means clustering algorithm (K=5) was trained following log1p skewness correction and standard scaling, validated via Elbow inertia and Silhouette coefficients (0.2449). Every final cluster strictly satisfied the mandatory 5.0% minimum size threshold (ranging from 16.33% to 23.09%) and demonstrated statistically significant distinctions across four core KPIs: patient expenditure (₹0 to ₹20,763), visit frequency (1.38 to 10.16 visits), average length of stay (0.09 to 12.37 days), and hospital admission rate (4.83% to 100.0%).
+
+To satisfy the stretch requirement, a two-period longitudinal stability analysis was conducted over two 11-month windows (Period 1 Baseline vs. Period 2 Evolution) tracking 53,434 common patients, establishing an overall cohort retention rate of 34.75% and an Adjusted Rand Index (ARI) of 0.0449. The project includes six concrete, financially modeled, and clinically ethical strategic business recommendations, an interactive 10-page Streamlit business intelligence dashboard, an automated 23-test Pytest quality assurance suite (100% pass rate), a 24-section Microsoft Word report (HospitalIQ_Final_Report.docx), and a 14-slide executive presentation (HospitalIQ_Business_Presentation.pptx). Known limitations include the synthetic nature of the dataset and out-of-network patient attrition tracking.

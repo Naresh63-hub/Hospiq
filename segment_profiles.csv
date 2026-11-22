@@ -1,0 +1,6 @@
+cluster_id,cluster_name,patient_count,total_revenue_inr,avg_recency_days,avg_visit_frequency,avg_monetary_inr,avg_billing_per_txn,admission_rate_pct,avg_los_days,readmission_rate_pct,avg_lab_utilization,avg_dept_diversity,avg_age,patient_share_pct,revenue_share_pct
+0,High-Value Episodic & Specialized Ambulatory,14484,300727070.57,247.0,1.38,20762.71,8381.78,6.6,0.15,0.62,1.32,1.12,45.0,22.64,49.23
+1,High-Acuity Inpatient Surgical & Complex Care,11713,229278473.58,117.5,4.72,19574.7,7762.66,100.0,12.37,10.02,1.38,2.03,45.3,18.31,37.53
+2,High-Engagement Multi-Specialty Chronic Outpatients,10445,80878105.28,46.3,10.16,7743.24,3176.11,9.0,0.25,0.82,1.47,4.61,45.0,16.33,13.24
+3,Lapsed / Low-Utilization General Ambulatory,14768,0.0,207.6,1.63,0.0,0.0,4.83,0.09,0.54,1.46,1.34,44.8,23.09,0.0
+4,Subsidized / Institutional Inpatient Care,12555,0.0,119.7,4.63,0.0,0.0,100.0,11.67,9.76,1.38,1.99,44.8,19.63,0.0

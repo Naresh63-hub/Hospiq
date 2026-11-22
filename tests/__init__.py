@@ -1,0 +1,1 @@
+"""HospitalIQ Test Suite."""

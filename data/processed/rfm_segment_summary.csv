@@ -1,0 +1,7 @@
+rfm_segment,patient_count,total_revenue_inr,avg_recency_days,avg_visit_frequency,avg_monetary_value_inr,avg_billing_per_txn,admission_rate_pct,avg_los_days,readmission_rate_pct,lab_utilization_avg,patient_share_pct,revenue_share_pct
+At-Risk Patients,19524,250950869.03,299.8,2.4,12853.46,5240.78,38.09,4.77,3.84,1.102540463019873,30.52,41.08
+High-Value Active Patients,5944,139124782.04,30.8,9.47,23405.92,9268.67,53.77,5.57,5.05,1.4705585464333781,9.29,22.77
+Loyal Regular Patients,22228,123556264.7,59.3,6.43,5558.59,2236.05,53.66,5.69,5.27,1.4895627136944394,34.75,20.23
+Growing Patients,4404,58533171.21,36.2,1.08,13290.91,5033.25,26.63,1.89,2.72,1.9164396003633062,6.89,9.58
+Occasional Patients,5744,38718562.45,87.2,1.17,6740.7,2823.25,27.75,2.97,2.88,1.7775069637883008,8.98,6.34
+Low-Engagement Patients,6121,0.0,325.6,1.0,0.0,0.0,25.31,3.13,2.43,1.2290475412514295,9.57,0.0

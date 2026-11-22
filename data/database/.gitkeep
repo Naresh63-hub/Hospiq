@@ -1,0 +1,2 @@
+# Keep data/database directory in version control.
+# hospitaliq.db is generated locally via `python run_pipeline.py`.
