@@ -50,35 +50,37 @@ st.markdown("""
         color: #94a3b8 !important;
         margin-bottom: 20px;
     }
-    [data-testid="stMetric"] {
+    div[data-testid="stMetric"], div[data-testid="metric-container"], [data-testid="stMetric"] {
         background-color: #1e293b !important;
         border: 1px solid #334155 !important;
-        padding: 16px 20px !important;
-        border-radius: 12px !important;
+        padding: 12px 14px !important;
+        border-radius: 10px !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
         transition: transform 0.2s ease, border-color 0.2s ease;
     }
-    [data-testid="stMetric"]:hover {
+    div[data-testid="stMetric"]:hover, div[data-testid="metric-container"]:hover {
         border-color: #38bdf8 !important;
         transform: translateY(-2px);
     }
-    [data-testid="stMetricLabel"] {
-        color: #94a3b8 !important;
-        font-size: 13px !important;
-        font-weight: 600 !important;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
+    div[data-testid="stMetric"] [data-testid="stMetricLabel"] *, 
+    div[data-testid="metric-container"] [data-testid="stMetricLabel"] *,
+    [data-testid="stMetricLabel"],
     [data-testid="stMetricLabel"] * {
         color: #94a3b8 !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
     }
-    [data-testid="stMetricValue"] {
-        color: #38bdf8 !important;
-        font-size: 28px !important;
-        font-weight: 700 !important;
-    }
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] *, 
+    div[data-testid="metric-container"] [data-testid="stMetricValue"] *,
+    [data-testid="stMetricValue"],
     [data-testid="stMetricValue"] * {
         color: #38bdf8 !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
     }
     .disclaimer-box {
         background-color: #0f172a;
@@ -246,7 +248,7 @@ def main():
         st.markdown("<div class='sub-title'>High-level operational, financial, and patient population summary across the 4 network hospitals.</div>", unsafe_allow_html=True)
         
         # Top KPI Cards
-        kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
+        kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns([1, 1, 1, 1, 1.25])
         
         agg = data.get("aggregates", {}).get("totals", {})
         total_pts = agg.get("total_patients", len(data.get("patients", [])))
@@ -310,7 +312,16 @@ def main():
                 h_perf = pd.DataFrame()
 
             if not h_perf.empty:
-                st.dataframe(h_perf, use_container_width=True, hide_index=True)
+                st.dataframe(
+                    h_perf,
+                    column_config={
+                        "Hospital": st.column_config.TextColumn("Facility", width="medium"),
+                        "Revenue_Cr": st.column_config.NumberColumn("Revenue (₹ Cr)", format="₹%.2f Cr"),
+                        "Transactions": st.column_config.NumberColumn("Transactions", format="%d")
+                    },
+                    use_container_width=True,
+                    hide_index=True
+                )
                 bar_chart = alt.Chart(h_perf).mark_bar(cornerRadiusEnd=6, color="#0ea5e9").encode(
                     y=alt.Y("Hospital:N", sort="-x", title=None, axis=alt.Axis(labelLimit=250)),
                     x=alt.X("Revenue_Cr:Q", title="Net Revenue (₹ Crores)"),
