@@ -16,7 +16,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler, RobustScaler
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
+from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
+from sklearn.ensemble import RandomForestClassifier
 
 FIGURE_DIR = os.path.join("reports", "figures")
 os.makedirs(FIGURE_DIR, exist_ok=True)
@@ -68,10 +69,12 @@ def prepare_clustering_data(df: pd.DataFrame) -> tuple[pd.DataFrame, np.ndarray,
 
 
 def evaluate_k_selection(X_scaled: np.ndarray, k_range=range(2, 9), seed=42) -> tuple[dict, int]:
-    """Compute inertia and silhouette scores across K=2..8 and save charts."""
-    print("Evaluating K-Means cluster selection (Elbow Curve & Silhouette Scores)...")
+    """Compute inertia, silhouette, Davies-Bouldin, and Calinski-Harabasz scores across K=2..8."""
+    print("Evaluating K-Means cluster selection (Elbow Curve & Multi-Metric Validation)...")
     inertias = []
     silhouette_scores = []
+    davies_bouldin_scores = []
+    calinski_harabasz_scores = []
     
     # Subsample for fast, stable silhouette scoring on large patient cohorts
     sample_size = min(15000, len(X_scaled))
@@ -88,7 +91,15 @@ def evaluate_k_selection(X_scaled: np.ndarray, k_range=range(2, 9), seed=42) -> 
         # Silhouette score on representative sample
         sil = silhouette_score(X_sample, labels[sample_indices])
         silhouette_scores.append(sil)
-        print(f"K = {k}: Inertia = {km.inertia_:,.1f}, Silhouette Score = {sil:.4f}")
+        
+        # Davies-Bouldin Index (lower is better) & Calinski-Harabasz Index (higher is better)
+        db_score = davies_bouldin_score(X_sample, labels[sample_indices])
+        davies_bouldin_scores.append(db_score)
+        
+        ch_score = calinski_harabasz_score(X_sample, labels[sample_indices])
+        calinski_harabasz_scores.append(ch_score)
+        
+        print(f"K = {k}: Inertia = {km.inertia_:,.1f}, Silhouette = {sil:.4f}, Davies-Bouldin = {db_score:.4f}, Calinski-Harabasz = {ch_score:,.1f}")
         
     # Chart 1: Elbow Curve
     fig, ax = plt.subplots(figsize=(8, 4.5))
@@ -124,6 +135,8 @@ def evaluate_k_selection(X_scaled: np.ndarray, k_range=range(2, 9), seed=42) -> 
         "k_values": k_list,
         "inertias": inertias,
         "silhouette_scores": silhouette_scores,
+        "davies_bouldin_scores": davies_bouldin_scores,
+        "calinski_harabasz_scores": calinski_harabasz_scores,
         "optimal_k": optimal_k,
         "elbow_chart": elbow_path,
         "silhouette_chart": sil_path,
@@ -295,6 +308,35 @@ def plot_kmeans_profile_charts(profile: pd.DataFrame, df_clustered: pd.DataFrame
     return {"cluster_shares": chart1_path, "kpi_distinctions": chart2_path, "rfm_comparison": chart3_path}
 
 
+def compute_cluster_feature_importance(X_scaled: np.ndarray, labels: np.ndarray, feature_names: list[str]) -> pd.DataFrame:
+    """Train a Random Forest classifier on clusters to quantify feature discriminative power."""
+    print("Computing K-Means feature discriminative power using Random Forest Gini Importance...")
+    rf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42, n_jobs=-1)
+    rf.fit(X_scaled, labels)
+    
+    fi_df = pd.DataFrame({
+        "feature": feature_names,
+        "importance_pct": (rf.feature_importances_ * 100).round(2)
+    }).sort_values(by="importance_pct", ascending=True)
+    
+    fig, ax = plt.subplots(figsize=(8.5, 4.8))
+    bars = ax.barh(fi_df["feature"], fi_df["importance_pct"], color="#0284c7", edgecolor="black", alpha=0.85)
+    for bar in bars:
+        w = bar.get_width()
+        ax.text(w + 0.6, bar.get_y() + bar.get_height()/2.0, f"{w:.1f}%", va="center", fontweight="bold", fontsize=10)
+    ax.set_title("K-Means 6: Feature Discriminative Power (Random Forest Gini Importance)", fontweight="bold")
+    ax.set_xlabel("Feature Importance Contribution (%)", fontweight="bold")
+    ax.set_ylabel("Patient Feature", fontweight="bold")
+    ax.set_xlim(0, max(fi_df["importance_pct"]) * 1.25)
+    ax.grid(True, linestyle="--", alpha=0.5, axis="x")
+    fig.tight_layout()
+    chart_path = os.path.join(FIGURE_DIR, "kmeans_feature_importance.png")
+    fig.savefig(chart_path, dpi=200)
+    plt.close(fig)
+    print(f"Feature importance chart saved to: {chart_path}")
+    return fi_df.sort_values(by="importance_pct", ascending=False)
+
+
 def run_kmeans_clustering(features_path: str, rfm_path: str, output_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Execute complete K-Means clustering pipeline."""
     print("=" * 60)
@@ -325,6 +367,11 @@ def run_kmeans_clustering(features_path: str, rfm_path: str, output_path: str) -
     
     # Generate charts
     charts = plot_kmeans_profile_charts(profile, df_clustered)
+    
+    # Feature Importance Modeling
+    fi_df = compute_cluster_feature_importance(X_scaled, df_clustered["cluster_id"].values, CLUSTER_FEATURES)
+    fi_path = os.path.join(os.path.dirname(output_path), "kmeans_feature_importance.csv")
+    fi_df.to_csv(fi_path, index=False)
     
     print("=" * 60)
     print("K-MEANS CLUSTERING COMPLETE")

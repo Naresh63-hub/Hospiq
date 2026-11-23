@@ -24,6 +24,7 @@ import os
 import io
 import pandas as pd
 import numpy as np
+import altair as alt
 import streamlit as st
 
 # Configure page layout and healthcare theme
@@ -34,46 +35,58 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom Styling for Healthcare Analytics Executive UI (Theme-Adaptive for Dark and Light Modes)
+# Custom Styling for Healthcare Analytics Executive UI (Theme-Adaptive & High-Contrast)
 st.markdown("""
 <style>
     .main-title {
         font-size: 28px;
         font-weight: 700;
-        color: var(--text-color, #1a365d);
+        color: #f8fafc !important;
         margin-bottom: 4px;
+        letter-spacing: -0.5px;
     }
     .sub-title {
         font-size: 14px;
-        color: var(--text-color, #4a5568);
-        opacity: 0.85;
+        color: #94a3b8 !important;
         margin-bottom: 20px;
     }
     [data-testid="stMetric"] {
-        background-color: var(--secondary-background-color, #f8fafc) !important;
-        border: 1px solid rgba(128, 128, 128, 0.25) !important;
-        padding: 14px 18px !important;
-        border-radius: 10px !important;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+        background-color: #1e293b !important;
+        border: 1px solid #334155 !important;
+        padding: 16px 20px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    [data-testid="stMetric"]:hover {
+        border-color: #38bdf8 !important;
+        transform: translateY(-2px);
     }
     [data-testid="stMetricLabel"] {
-        color: var(--text-color, #4a5568) !important;
-        opacity: 0.85 !important;
-        font-size: 14px !important;
+        color: #94a3b8 !important;
+        font-size: 13px !important;
         font-weight: 600 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    [data-testid="stMetricLabel"] * {
+        color: #94a3b8 !important;
     }
     [data-testid="stMetricValue"] {
-        color: var(--text-color, #1a365d) !important;
-        font-size: 26px !important;
+        color: #38bdf8 !important;
+        font-size: 28px !important;
         font-weight: 700 !important;
     }
+    [data-testid="stMetricValue"] * {
+        color: #38bdf8 !important;
+    }
     .disclaimer-box {
-        background-color: var(--secondary-background-color, #ebf8ff);
-        border: 1px solid rgba(66, 153, 225, 0.4);
+        background-color: #0f172a;
+        border: 1px solid #0284c7;
         border-radius: 8px;
-        padding: 12px;
+        padding: 14px;
         font-size: 13px;
-        color: var(--text-color, #2c5282);
+        color: #bae6fd;
         margin-top: 15px;
     }
 </style>
@@ -255,14 +268,30 @@ def main():
             st.markdown("#### **Monthly Revenue & Outpatient Volume Trajectory**")
             monthly_dict = data.get("aggregates", {}).get("monthly_revenue_trajectory_cr")
             if monthly_dict:
-                st.line_chart(pd.Series(monthly_dict))
-                st.caption("Figure: 22-Month monthly network revenue in ₹ Crores (Jan 2025 - Oct 2026).")
+                m_df = pd.DataFrame(list(monthly_dict.items()), columns=["Month", "Revenue_Cr"])
             elif "billing" in data and not data["billing"].empty:
                 b_df = data["billing"].dropna(subset=["transaction_date_cleaned"]).copy()
                 b_df["month"] = pd.to_datetime(b_df["transaction_date_cleaned"]).dt.to_period("M").astype(str)
                 b_df_22m = b_df[b_df["month"] <= "2026-10"]
-                monthly = b_df_22m.groupby("month")["corrected_total_amount"].sum() / 1e7
-                st.line_chart(monthly)
+                m_s = b_df_22m.groupby("month")["corrected_total_amount"].sum() / 1e7
+                m_df = pd.DataFrame({"Month": m_s.index, "Revenue_Cr": m_s.values.round(3)})
+            else:
+                m_df = pd.DataFrame()
+
+            if not m_df.empty:
+                line_chart = alt.Chart(m_df).mark_area(
+                    color="#0284c7",
+                    opacity=0.3,
+                    line={"color": "#38bdf8", "size": 3}
+                ).encode(
+                    x=alt.X("Month:N", title="Reporting Period (Jan 2025 - Oct 2026)", axis=alt.Axis(labelAngle=-45)),
+                    y=alt.Y("Revenue_Cr:Q", title="Net Revenue (₹ Crores)", scale=alt.Scale(domain=[2.0, 3.5])),
+                    tooltip=[
+                        alt.Tooltip("Month:N", title="Reporting Month"),
+                        alt.Tooltip("Revenue_Cr:Q", title="Revenue (₹ Cr)", format=".2f")
+                    ]
+                ).properties(height=340)
+                st.altair_chart(line_chart, use_container_width=True)
                 st.caption("Figure: 22-Month monthly network revenue in ₹ Crores (Jan 2025 - Oct 2026).")
         
         with col_right:
@@ -270,20 +299,28 @@ def main():
             hosp_agg = data.get("aggregates", {}).get("hospital_performance")
             if hosp_agg:
                 h_perf = pd.DataFrame(hosp_agg)
-                st.dataframe(h_perf, use_container_width=True, hide_index=True)
-                chart_data = h_perf.set_index("Hospital")["Revenue_Cr"]
-                st.bar_chart(chart_data)
             elif "billing" in data and not data["billing"].empty:
                 h_perf = data["billing"].groupby("hospital_name_cleaned").agg(
                     Revenue_Cr=("corrected_total_amount", lambda x: round(x.sum()/1e7, 2)),
                     Transactions=("transaction_id", "count")
                 ).reset_index()
                 h_perf["Hospital"] = [h.split(",")[0] for h in h_perf["hospital_name_cleaned"]]
-                st.dataframe(h_perf[["Hospital", "Revenue_Cr", "Transactions"]], use_container_width=True, hide_index=True)
-                chart_data = h_perf.set_index("Hospital")["Revenue_Cr"]
-                st.bar_chart(chart_data)
+                h_perf = h_perf[["Hospital", "Revenue_Cr", "Transactions"]]
             else:
                 h_perf = pd.DataFrame()
+
+            if not h_perf.empty:
+                st.dataframe(h_perf, use_container_width=True, hide_index=True)
+                bar_chart = alt.Chart(h_perf).mark_bar(cornerRadiusEnd=6, color="#0ea5e9").encode(
+                    y=alt.Y("Hospital:N", sort="-x", title=None, axis=alt.Axis(labelLimit=250)),
+                    x=alt.X("Revenue_Cr:Q", title="Net Revenue (₹ Crores)"),
+                    tooltip=[
+                        alt.Tooltip("Hospital:N", title="Hospital"),
+                        alt.Tooltip("Revenue_Cr:Q", title="Revenue (₹ Cr)", format=".2f"),
+                        alt.Tooltip("Transactions:Q", title="Transactions", format=",")
+                    ]
+                ).properties(height=200)
+                st.altair_chart(bar_chart, use_container_width=True)
                 
         st.divider()
         st.markdown("#### **Core Strategic Findings**")

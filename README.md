@@ -1,6 +1,7 @@
 # HospitalIQ: Healthcare Analytics & Patient Segmentation Study
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hospiq-n.streamlit.app/)
+[![GitHub Pages](https://img.shields.io/badge/Web%20Showcase-GitHub%20Pages-blue.svg)](https://naresh63-hub.github.io/Hospiq/)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests: 31 Passed](https://img.shields.io/badge/Pytest-31%20Passed%20(100%25)-brightgreen.svg)](tests/)
@@ -9,7 +10,8 @@
 > **YuvaIntern Data Analyst Internship Final Evaluation Project**  
 > **Location:** Hyderabad, Telangana, India | **Duration:** 8 Weeks (11 Nov 2026 – 6 Jan 2027)  
 > **Target Evaluation Score:** 100 / 100 | **Author:** Senior Data Analyst Intern  
-> **🌐 Live Interactive Dashboard:** **[https://hospiq-n.streamlit.app/](https://hospiq-n.streamlit.app/)**
+> **🌐 Live Interactive Dashboard:** **[https://hospiq-n.streamlit.app/](https://hospiq-n.streamlit.app/)**  
+> **🏛️ Executive Web Showcase:** **[https://naresh63-hub.github.io/Hospiq/](https://naresh63-hub.github.io/Hospiq/)**
 
 ---
 
@@ -18,8 +20,10 @@
 | Deliverable | Description | Format | Direct Access / Download |
 |---|---|:---:|:---:|
 | **Live Interactive Dashboard** | 11-page Streamlit BI App with Patient Profiler & ROI Simulator | Web App | [👉 Launch Live Dashboard](https://hospiq-n.streamlit.app/) |
+| **Executive Web Showcase** | High-level interactive portfolio landing page with live counters | HTML5 | [🌐 View Web Showcase](https://naresh63-hub.github.io/Hospiq/) |
 | **Comprehensive Final Report** | 24-section formal academic report with embedded 300 DPI figures | Word (.docx) | [📥 Download Final Report (.docx)](submission/HospitalIQ_Final_Report.docx) |
 | **Executive Presentation Deck**| 14 widescreen corporate strategy slides with empirical charts & ROI models | PPTX (.pptx) | [📥 Download Presentation (.pptx)](submission/HospitalIQ_Business_Presentation.pptx) |
+| **Pre-Rendered Notebooks** | 3 fully executed Jupyter notebooks with rich tables & rendered plots | .ipynb | [📓 View Notebook 01](notebooks/01_data_generation_cleaning.ipynb) / [02](notebooks/02_eda_feature_engineering.ipynb) / [03](notebooks/03_rfm_kmeans_clustering.ipynb) |
 | **Project Submission Summary** | 380+ word executive summary covering problem, methods & results | Text (.txt) | [📄 View Summary (.txt)](submission/PROJECT_SUBMISSION_DESCRIPTION.txt) |
 | **Complete Audit Report** | Independent 20-phase audit report with evidence & verification logs | Markdown | [🔍 View Audit Report (.md)](submission/FINAL_AUDIT_REPORT.md) |
 | **Evaluation Checklist** | 26-point verification matrix with PASSED/VERIFIED status | Markdown | [✅ View Checklist (.md)](submission/FINAL_INTERNSHIP_SUBMISSION_CHECKLIST.md) |

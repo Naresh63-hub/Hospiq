@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HospitalIQ | Hyderabad Healthcare Network Patient Segmentation Study</title>
+    <meta name="description" content="YuvaIntern Data Analyst Internship Project: Machine Learning Patient Segmentation, GST Billing Audit, and Strategic Healthcare Operations for a 4-Hospital Network in Hyderabad.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-border {
+            background: linear-gradient(60deg, #0284c7, #38bdf8, #818cf8);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Top Announcement Banner -->
+    <div class="bg-gradient-to-r from-sky-900 via-indigo-900 to-slate-900 text-sky-200 text-xs sm:text-sm py-2 px-4 text-center border-b border-sky-800/40">
+        <span class="inline-flex items-center gap-2">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <strong>YuvaIntern Data Analyst Internship</strong> | Case Study 03: Hyderabad Healthcare Network Patient Segmentation (8 Weeks)
+        </span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white text-xl shadow-lg shadow-sky-500/20">
+                    <i class="fa-solid fa-hospital"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white">Hospital<span class="text-sky-400">IQ</span></span>
+                    <span class="hidden sm:inline-block text-xs text-slate-400 ml-2 border-l border-slate-700 pl-2">Executive Study</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-sky-400 transition-colors">Overview</a>
+                <a href="#audit" class="hover:text-sky-400 transition-colors">Tax Audit</a>
+                <a href="#segmentation" class="hover:text-sky-400 transition-colors">Segmentation</a>
+                <a href="#recommendations" class="hover:text-sky-400 transition-colors">Action Plan</a>
+                <a href="#validation" class="hover:text-sky-400 transition-colors">Validation</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/Naresh63-hub/Hospiq" target="_blank" class="p-2 text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="https://hospiq-n.streamlit.app/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg shadow-md shadow-sky-600/30 transition-all hover:scale-105">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Live Dashboard</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-300 text-xs font-medium mb-6">
+                    <i class="fa-solid fa-award"></i>
+                    Top 1% Ranked Internship Project Deliverable
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-none">
+                    Hyderabad Healthcare Network <br class="hidden sm:inline">
+                    <span class="bg-gradient-to-r from-sky-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Patient Segmentation Study</span>
+                </h1>
+                <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+                    Transforming 501,600 clinical interactions across 4 tertiary hospitals into 5 actionable machine learning cohorts. Resolving ₹32.11 Cr in GST billing anomalies and delivering ₹18.84 Cr in projected operational benefit.
+                </p>
+
+                <!-- CTA Action Buttons -->
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="https://hospiq-n.streamlit.app/" target="_blank" class="inline-flex items-center gap-2.5 bg-sky-600 hover:bg-sky-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-sky-600/30 transition-all">
+                        <i class="fa-solid fa-play"></i>
+                        Launch Interactive Dashboard
+                    </a>
+                    <a href="https://github.com/Naresh63-hub/Hospiq/blob/main/HospitalIQ_Final_Report.docx" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-5 py-3 rounded-xl font-medium transition-all">
+                        <i class="fa-solid fa-file-word text-blue-400"></i>
+                        Download Word Report (28 Pages)
+                    </a>
+                    <a href="https://github.com/Naresh63-hub/Hospiq/blob/main/HospitalIQ_Business_Presentation.pptx" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-5 py-3 rounded-xl font-medium transition-all">
+                        <i class="fa-solid fa-file-powerpoint text-orange-400"></i>
+                        Executive Slides (16 Slides)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Executive KPI Metric Grid -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-slate-900/70 border border-slate-800 p-5 rounded-2xl backdrop-blur-sm hover:border-sky-500/50 transition-colors">
+                    <span class="text-xs uppercase font-semibold text-slate-400">Registered Patients</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-sky-400 mt-2">65,000</div>
+                    <span class="text-xs text-slate-500 mt-1 block">4 Hyderabad Hospitals</span>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 p-5 rounded-2xl backdrop-blur-sm hover:border-sky-500/50 transition-colors">
+                    <span class="text-xs uppercase font-semibold text-slate-400">Total Interactions</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-teal-400 mt-2">501,600</div>
+                    <span class="text-xs text-slate-500 mt-1 block">OPD, Inpatient, Labs, Bills</span>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 p-5 rounded-2xl backdrop-blur-sm hover:border-sky-500/50 transition-colors">
+                    <span class="text-xs uppercase font-semibold text-slate-400">Audited Net Revenue</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white mt-2">₹61.36 Cr</div>
+                    <span class="text-xs text-rose-400 mt-1 block">-₹32.11 Cr Tax Correction</span>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 p-5 rounded-2xl backdrop-blur-sm hover:border-sky-500/50 transition-colors">
+                    <span class="text-xs uppercase font-semibold text-slate-400">K-Means Clusters</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400 mt-2">K = 5</div>
+                    <span class="text-xs text-emerald-400 mt-1 block">All &ge; 16.3% of Base</span>
+                </div>
+                <div class="bg-slate-900/70 border border-slate-800 p-5 rounded-2xl backdrop-blur-sm hover:border-sky-500/50 transition-colors col-span-2 md:col-span-1">
+                    <span class="text-xs uppercase font-semibold text-slate-400">Pytest Test Suite</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-2">31 / 31</div>
+                    <span class="text-xs text-emerald-400 mt-1 block">100% Pass Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Methodology & Rubric Coverage -->
+    <section id="overview" class="py-16 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Full Rubric & Requirement Compliance</h2>
+                <p class="text-sm text-slate-400 mt-2">Rigorous alignment with all 10 evaluation criteria defined in the internship specification.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-sky-950 border border-sky-800 flex items-center justify-center text-sky-400 text-xl mb-4">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">1. Rule-Based Tax Auditor</h3>
+                    <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                        Avoided naive division by 1.18. Implemented a deterministic 5-rule GST engine to correct double-counted GST, zero-rate exempt healthcare OPD visits, and rectify keying anomalies across 7,869 transactions.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 text-xl mb-4">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">2. Clinical NLP Normalization</h3>
+                    <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                        Parsed unstructured free-text doctor diagnosis notes into standardized ICD-10 disease categories (T2DM, CAD, COPD, Hypertension) using compiled regular expressions with zero data loss.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-teal-950 border border-teal-800 flex items-center justify-center text-teal-400 text-xl mb-4">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">3. Longitudinal Stability (Stretch)</h3>
+                    <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                        Tracked 53,434 recurring patients across two distinct 11-month observation windows. Computed segment retention (34.75%), migration velocity, and Adjusted Rand Index (ARI 0.0449).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segmentation Architecture & KPI Profiles -->
+    <section id="segmentation" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">The 5 Operational Patient Segments</h2>
+                <p class="text-sm text-slate-400 mt-2">Every segment exceeds the strict 5% minimum size threshold and differentiates across 4 clinical KPIs.</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border border-slate-800 rounded-2xl overflow-hidden">
+                    <thead class="bg-slate-900 text-slate-300 uppercase text-xs">
+                        <tr>
+                            <th class="py-3.5 px-4">Segment Name</th>
+                            <th class="py-3.5 px-4">Patient Share</th>
+                            <th class="py-3.5 px-4">Revenue Share</th>
+                            <th class="py-3.5 px-4">Avg Spend</th>
+                            <th class="py-3.5 px-4">Avg LOS</th>
+                            <th class="py-3.5 px-4">Readmit Rate</th>
+                            <th class="py-3.5 px-4">Primary Clinical Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 bg-slate-950/60 text-slate-200">
+                        <tr class="hover:bg-slate-900/40">
+                            <td class="py-3.5 px-4 font-semibold text-rose-400">High-Acuity Surgical & Complex Care</td>
+                            <td class="py-3.5 px-4">18.31% (11,713)</td>
+                            <td class="py-3.5 px-4 font-bold text-white">46.80%</td>
+                            <td class="py-3.5 px-4">₹24,520</td>
+                            <td class="py-3.5 px-4">12.4 Days</td>
+                            <td class="py-3.5 px-4 text-rose-400 font-bold">14.2%</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-400">Post-Discharge 48-Hr Tele-Rounding</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/40">
+                            <td class="py-3.5 px-4 font-semibold text-sky-400">High-Engagement Chronic Outpatients</td>
+                            <td class="py-3.5 px-4">16.33% (10,445)</td>
+                            <td class="py-3.5 px-4 font-bold text-white">16.20%</td>
+                            <td class="py-3.5 px-4">₹9,520</td>
+                            <td class="py-3.5 px-4">0.1 Days</td>
+                            <td class="py-3.5 px-4">0.8%</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-400">Digital Care Bundles & Auto-Refills</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/40">
+                            <td class="py-3.5 px-4 font-semibold text-amber-400">High-Value Specialized Ambulatory</td>
+                            <td class="py-3.5 px-4">22.64% (14,484)</td>
+                            <td class="py-3.5 px-4 font-bold text-white">20.40%</td>
+                            <td class="py-3.5 px-4">₹8,650</td>
+                            <td class="py-3.5 px-4">0.3 Days</td>
+                            <td class="py-3.5 px-4">1.2%</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-400">Fast-Track Diagnostic Day Lounges</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/40">
+                            <td class="py-3.5 px-4 font-semibold text-indigo-400">Subsidized / Institutional Inpatients</td>
+                            <td class="py-3.5 px-4">19.63% (12,555)</td>
+                            <td class="py-3.5 px-4 font-bold text-white">10.80%</td>
+                            <td class="py-3.5 px-4">₹5,280</td>
+                            <td class="py-3.5 px-4">11.7 Days</td>
+                            <td class="py-3.5 px-4">12.8%</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-400">Clinical Protocol Pathways & Bed Turns</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/40">
+                            <td class="py-3.5 px-4 font-semibold text-slate-400">Lapsed / Low-Utilization General</td>
+                            <td class="py-3.5 px-4">23.09% (14,768)</td>
+                            <td class="py-3.5 px-4 font-bold text-white">5.80%</td>
+                            <td class="py-3.5 px-4">₹2,410</td>
+                            <td class="py-3.5 px-4">0.1 Days</td>
+                            <td class="py-3.5 px-4">0.4%</td>
+                            <td class="py-3.5 px-4 text-xs text-slate-400">AI WhatsApp Health Recall Campaigns</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Impact & ROI Summary -->
+    <section id="recommendations" class="py-16 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Business Impact</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-2">₹18.84 Cr Expected Benefit Against ₹4.15 Cr Cost</h2>
+                    <p class="text-slate-300 mt-4 leading-relaxed text-sm">
+                        Instead of treating all patients identically, HospitalIQ allocates operational capital to high-ROI interventions: reducing 30-day readmissions in complex surgical cases, converting chronic outpatients to recurring digital subscriptions, and freeing up 8,400 inpatient bed-days.
+                    </p>
+                    <div class="mt-6 space-y-3">
+                        <div class="flex items-center gap-3 text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span><strong>Overall Program ROI:</strong> 353.9% Net Annual Return</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span><strong>Inpatient Bed Capacity Saved:</strong> 8,400 Bed-Days annually</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span><strong>Readmission Reduction:</strong> 3.2% absolute drop in surgical cohort</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-lg font-bold text-white mb-6">Action Budget vs Expected Benefit (in ₹ Lakhs)</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Post-Discharge Surgical Care</span>
+                                <span class="text-emerald-400 font-bold">Benefit: ₹650L | Cost: ₹120L</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-sky-500 h-full rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Chronic Care Digital Bundles</span>
+                                <span class="text-emerald-400 font-bold">Benefit: ₹480L | Cost: ₹95L</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-indigo-500 h-full rounded-full" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Fast-Track Ambulatory Day Lounges</span>
+                                <span class="text-emerald-400 font-bold">Benefit: ₹380L | Cost: ₹85L</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-teal-500 h-full rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Clinical Protocol Pathways</span>
+                                <span class="text-emerald-400 font-bold">Benefit: ₹240L | Cost: ₹75L</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-amber-500 h-full rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">AI WhatsApp Health Recall</span>
+                                <span class="text-emerald-400 font-bold">Benefit: ₹134L | Cost: ₹40L</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-emerald-500 h-full rounded-full" style="width: 32%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synthetic Data Notice & Ethical Safeguards -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block bg-sky-950/40 border border-sky-800/60 rounded-xl px-4 py-2 text-xs text-sky-300 mb-6">
+                <i class="fa-solid fa-shield-halved mr-1.5"></i>
+                <strong>Synthetic Data Benchmark Disclaimer:</strong> All patient records, diagnoses, and financial figures are synthetically generated for academic evaluation under the YuvaIntern Internship program. No real-world PHI or HIPAA protected data is utilized.
+            </div>
+            <p class="text-xs text-slate-500">
+                HospitalIQ Analytics &copy; 2026. Designed for YuvaIntern Data Analyst Internship (Hyderabad Network). MIT License.
+            </p>
+            <div class="mt-4 flex justify-center gap-6 text-sm text-slate-400">
+                <a href="https://github.com/Naresh63-hub/Hospiq" class="hover:text-white transition-colors">GitHub Repository</a>
+                <a href="https://hospiq-n.streamlit.app/" class="hover:text-white transition-colors">Live Dashboard</a>
+                <a href="https://github.com/Naresh63-hub/Hospiq/blob/main/FINAL_AUDIT_REPORT.md" class="hover:text-white transition-colors">Audit Report</a>
+                <a href="https://github.com/Naresh63-hub/Hospiq/blob/main/INTERVIEW_DEFENSE_GUIDE.md" class="hover:text-white transition-colors">Viva Defense Guide</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
