@@ -1,4 +1,4 @@
-"""HospitalIQ - Healthcare Analytics Dashboard Entry Point.
+"""HospitalIQ - Healthcare Analytics Dashboard Entry Point (v2.1).
 
 This root entry file forwards execution to dashboard/app.py, allowing
 seamless deployment on Streamlit Community Cloud with default settings.

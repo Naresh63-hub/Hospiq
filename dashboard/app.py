@@ -80,8 +80,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_data
-def load_all_data():
+@st.cache_data(ttl=3600)
+def load_all_data(version_tag: str = "v2.1_full_metrics"):
     """Load all cleaned, processed, and profiled dataset tables."""
     base_data = {}
     
@@ -176,7 +176,7 @@ def export_dataframe_buttons(df: pd.DataFrame, filename_prefix: str):
 
 
 def main():
-    data = load_all_data()
+    data = load_all_data(version_tag="v2.1_full_metrics")
     
     # Sidebar
     st.sidebar.image("https://img.icons8.com/fluency/96/hospital.png", width=64)
