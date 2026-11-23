@@ -1,0 +1,101 @@
+{
+  "totals": {
+    "total_patients": 65000,
+    "total_opd": 220000,
+    "total_admissions": 45000,
+    "total_lab_tests": 90000,
+    "total_billing_txns": 80000,
+    "gross_reported_revenue_inr": 934663018.5999999,
+    "audited_net_revenue_inr": 613594110.0999999,
+    "net_adjustment_inr": 321068908.5,
+    "audited_net_revenue_cr": 61.36,
+    "gross_reported_revenue_cr": 93.47
+  },
+  "monthly_revenue_trajectory_cr": {
+    "2025-01": 3.065,
+    "2025-02": 2.566,
+    "2025-03": 2.979,
+    "2025-04": 2.718,
+    "2025-05": 2.822,
+    "2025-06": 2.741,
+    "2025-07": 2.882,
+    "2025-08": 2.906,
+    "2025-09": 2.853,
+    "2025-10": 2.854,
+    "2025-11": 2.627,
+    "2025-12": 2.716,
+    "2026-01": 2.646,
+    "2026-02": 2.48,
+    "2026-03": 2.556,
+    "2026-04": 2.756,
+    "2026-05": 2.926,
+    "2026-06": 2.962,
+    "2026-07": 2.829,
+    "2026-08": 2.691,
+    "2026-09": 2.715,
+    "2026-10": 2.8
+  },
+  "hospital_performance": [
+    {
+      "Hospital": "CareElite Super Specialty Hospital",
+      "Revenue_Cr": 17.44,
+      "Transactions": 22958
+    },
+    {
+      "Hospital": "CityCure General Hospital",
+      "Revenue_Cr": 9.44,
+      "Transactions": 12150
+    },
+    {
+      "Hospital": "Deccan Health City Institute",
+      "Revenue_Cr": 19.15,
+      "Transactions": 24886
+    },
+    {
+      "Hospital": "MetroCare Multispecialty Hospital",
+      "Revenue_Cr": 15.33,
+      "Transactions": 20006
+    }
+  ],
+  "demographics": {
+    "total_registered": 65000,
+    "median_age": 45.0,
+    "geriatric_pct": 25.1,
+    "female_ratio_pct": 48.0,
+    "age_distribution": {
+      "Pediatric (0-18)": 6507,
+      "Young Adult (19-35)": 14321,
+      "Adult (36-50)": 18104,
+      "Senior (51-65)": 16418,
+      "Geriatric (66+)": 9650
+    },
+    "city_distribution": {
+      "Hyderabad": 35470,
+      "Secunderabad": 13177,
+      "Warangal": 3818,
+      "Karimnagar": 3289,
+      "Nizamabad": 2625,
+      "Khammam": 2616,
+      "Guntur": 2061,
+      "Vijayawada": 1944
+    }
+  },
+  "department_workloads": {
+    "Cardiology": 57258,
+    "General Medicine": 45995,
+    "Endocrinology": 38094,
+    "Pulmonology": 22556,
+    "Orthopedics": 20752,
+    "Gastroenterology": 17054,
+    "Nephrology": 15027,
+    "Neurology": 3264
+  },
+  "service_line_revenue_cr": {
+    "Day Care Procedure": 3.82,
+    "IPD Bed & Nursing": 15.87,
+    "Laboratory Diagnostics": 2.36,
+    "OPD Consultation": 2.2,
+    "Pharmacy & Consumables": 5.63,
+    "Surgery & OT Charges": 31.47
+  }
+}

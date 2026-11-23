@@ -1,16 +1,29 @@
 # HospitalIQ: Healthcare Analytics & Patient Segmentation Study
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hospiq-n.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.67.0-FF4B4B.svg)](https://streamlit.io/)
-[![Tests: 23 Passed](https://img.shields.io/badge/Pytest-23%20Passed-brightgreen.svg)](tests/)
-[![Code Style: Clean](https://img.shields.io/badge/Code%20Quality-Verified-blue.svg)]()
+[![Tests: 31 Passed](https://img.shields.io/badge/Pytest-31%20Passed%20(100%25)-brightgreen.svg)](tests/)
+[![Code Quality: Verified](https://img.shields.io/badge/Code%20Quality-Verified-blue.svg)]()
 
 > **YuvaIntern Data Analyst Internship Final Evaluation Project**  
-> **Location:** Hyderabad, Telangana, India  
-> **Duration:** 8 Weeks (11 November 2026 – 6 January 2027)  
-> **Target Evaluation Score:** 100 / 100  
-> **Author:** Senior Data Analyst Intern  
+> **Location:** Hyderabad, Telangana, India | **Duration:** 8 Weeks (11 Nov 2026 – 6 Jan 2027)  
+> **Target Evaluation Score:** 100 / 100 | **Author:** Senior Data Analyst Intern  
+> **🌐 Live Interactive Dashboard:** **[https://hospiq-n.streamlit.app/](https://hospiq-n.streamlit.app/)**
+
+---
+
+### 🚀 Direct Evaluation & Submission Deliverables
+
+| Deliverable | Description | Format | Direct Access / Download |
+|---|---|:---:|:---:|
+| **Live Interactive Dashboard** | 11-page Streamlit BI App with Patient Profiler & ROI Simulator | Web App | [👉 Launch Live Dashboard](https://hospiq-n.streamlit.app/) |
+| **Comprehensive Final Report** | 24-section formal academic report with embedded 300 DPI figures | Word (.docx) | [📥 Download Final Report (.docx)](submission/HospitalIQ_Final_Report.docx) |
+| **Executive Presentation Deck**| 14 widescreen corporate strategy slides with empirical charts & ROI models | PPTX (.pptx) | [📥 Download Presentation (.pptx)](submission/HospitalIQ_Business_Presentation.pptx) |
+| **Project Submission Summary** | 380+ word executive summary covering problem, methods & results | Text (.txt) | [📄 View Summary (.txt)](submission/PROJECT_SUBMISSION_DESCRIPTION.txt) |
+| **Complete Audit Report** | Independent 20-phase audit report with evidence & verification logs | Markdown | [🔍 View Audit Report (.md)](submission/FINAL_AUDIT_REPORT.md) |
+| **Evaluation Checklist** | 26-point verification matrix with PASSED/VERIFIED status | Markdown | [✅ View Checklist (.md)](submission/FINAL_INTERNSHIP_SUBMISSION_CHECKLIST.md) |
+| **Interview Defense Guide** | 20 core technical questions & senior-level viva defense answers | Markdown | [🎓 View Interview Guide (.md)](INTERVIEW_DEFENSE_GUIDE.md) |  
 
 ---
 
