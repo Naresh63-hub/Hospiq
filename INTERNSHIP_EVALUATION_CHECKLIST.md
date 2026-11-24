@@ -1,11 +1,10 @@
-# HOSPITALIQ: FINAL INTERNSHIP EVALUATION AUDIT CHECKLIST
+# HOSPITALIQ: FINAL PROJECT EVALUATION AUDIT CHECKLIST
 
-**Internship:** Data Analyst Internship  
-**Host Organization:** YuvaIntern (Hyderabad, Telangana)  
-**Study Project:** Hospital Segmentation Study – Hyderabad Healthcare Network  
+**Project Scope:** Healthcare Data Analytics & Patient Segmentation Study  
+**Network Focus:** Hyderabad Healthcare Network (4 Tertiary Hospitals)  
 **Target Score:** 100 / 100  
 **Audit Date:** 22 November 2026  
-**Auditor:** Senior Data Analyst Intern & QA Lead  
+**Auditor:** Senior Healthcare Data Analyst & QA Lead  
 
 ---
 

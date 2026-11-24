@@ -1,6 +1,6 @@
 """HospitalIQ - Healthcare Analytics & Patient Segmentation Interactive Dashboard.
 
-YuvaIntern Data Analyst Internship Project: Hospital Segmentation Study.
+Healthcare Analytics & Patient Segmentation Study.
 A fictional Hyderabad healthcare network consisting of four tertiary hospitals:
 1. CareElite Super Specialty Hospital, Banjara Hills
 2. MetroCare Multispecialty Hospital, Hitec City
@@ -196,7 +196,7 @@ def main():
     # Sidebar
     st.sidebar.image("https://img.icons8.com/fluency/96/hospital.png", width=64)
     st.sidebar.markdown("### **HospitalIQ Analytics**")
-    st.sidebar.caption("YuvaIntern Data Analyst Internship | Hyderabad Network")
+    st.sidebar.caption("Healthcare Analytics & Strategy | Hyderabad Network")
     st.sidebar.divider()
     
     # Page Navigation

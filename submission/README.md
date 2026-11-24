@@ -6,10 +6,11 @@
 [![Tests: 31 Passed](https://img.shields.io/badge/Pytest-31%20Passed%20(100%25)-brightgreen.svg)](tests/)
 [![Code Quality: Verified](https://img.shields.io/badge/Code%20Quality-Verified-blue.svg)]()
 
-> **YuvaIntern Data Analyst Internship Final Evaluation Project**  
-> **Location:** Hyderabad, Telangana, India | **Duration:** 8 Weeks (11 Nov 2026 – 6 Jan 2027)  
-> **Target Evaluation Score:** 100 / 100 | **Author:** Senior Data Analyst Intern  
-> **🌐 Live Interactive Dashboard:** **[https://hospiq-n.streamlit.app/](https://hospiq-n.streamlit.app/)**
+> **Healthcare Data Analytics & Patient Segmentation Study**  
+> **Location:** Hyderabad, Telangana, India | **Duration:** 8-Week Longitudinal Study  
+> **Target Evaluation Score:** 100 / 100 | **Role:** Senior Healthcare Data Analyst  
+> **🌐 Live Interactive Dashboard:** **[https://hospiq-n.streamlit.app/](https://hospiq-n.streamlit.app/)**  
+> **🏛️ Executive Web Showcase:** **[docs/index.html](docs/index.html)**
 
 ---
 
@@ -18,8 +19,10 @@
 | Deliverable | Description | Format | Direct Access / Download |
 |---|---|:---:|:---:|
 | **Live Interactive Dashboard** | 11-page Streamlit BI App with Patient Profiler & ROI Simulator | Web App | [👉 Launch Live Dashboard](https://hospiq-n.streamlit.app/) |
+| **Executive Web Showcase** | High-level interactive portfolio landing page with live counters | HTML5 | [🌐 View Web Showcase](docs/index.html) |
 | **Comprehensive Final Report** | 24-section formal academic report with embedded 300 DPI figures | Word (.docx) | [📥 Download Final Report (.docx)](submission/HospitalIQ_Final_Report.docx) |
 | **Executive Presentation Deck**| 14 widescreen corporate strategy slides with empirical charts & ROI models | PPTX (.pptx) | [📥 Download Presentation (.pptx)](submission/HospitalIQ_Business_Presentation.pptx) |
+| **Pre-Rendered Notebooks** | 3 fully executed Jupyter notebooks with rich tables & rendered plots | .ipynb | [📓 View Notebook 01](notebooks/01_data_generation_cleaning.ipynb) / [02](notebooks/02_eda_feature_engineering.ipynb) / [03](notebooks/03_rfm_kmeans_clustering.ipynb) |
 | **Project Submission Summary** | 380+ word executive summary covering problem, methods & results | Text (.txt) | [📄 View Summary (.txt)](submission/PROJECT_SUBMISSION_DESCRIPTION.txt) |
 | **Complete Audit Report** | Independent 20-phase audit report with evidence & verification logs | Markdown | [🔍 View Audit Report (.md)](submission/FINAL_AUDIT_REPORT.md) |
 | **Evaluation Checklist** | 26-point verification matrix with PASSED/VERIFIED status | Markdown | [✅ View Checklist (.md)](submission/FINAL_INTERNSHIP_SUBMISSION_CHECKLIST.md) |
@@ -305,7 +308,7 @@ HospitalIQ/
 
 ### 1. Clone & Setup Environment
 ```bash
-git clone https://github.com/placeholder-yuva/HospitalIQ.git
+git clone https://github.com/healthcare-analytics/HospitalIQ.git
 cd HospitalIQ
 pip install -r requirements.txt
 ```
@@ -335,12 +338,12 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🏆 YuvaIntern Final Submission Deliverables
+## 🏆 Final Project Deliverables
 1. `HospitalIQ_Final_Report.docx` (Academic & Executive Final Report)
 2. `HospitalIQ_Business_Presentation.pptx` (14-Slide Executive Deck)
-3. `PROJECT_SUBMISSION_DESCRIPTION.txt` (320+ Word Description)
+3. `PROJECT_SUBMISSION_DESCRIPTION.txt` (380+ Word Description)
 4. `segment_profiles.csv` (K-Means Profiles Table)
 5. `segment_migration_chart.png` (Longitudinal Migration Heatmap)
 6. `notebooks/*.ipynb` (3 Executable Jupyter Notebooks)
 7. `INTERNSHIP_EVALUATION_CHECKLIST.md` (100% Evaluation Verification Audit)
-8. `dashboard/app.py` (10-Page Interactive Streamlit BI Application)
+8. `dashboard/app.py` (11-Page Interactive Streamlit BI Application)

@@ -51,7 +51,7 @@ def create_notebook_01():
     cells = [
         md_cell(
             "# HospitalIQ – Phase 1: Synthetic Dataset Generation & Data Cleaning\n"
-            "**YuvaIntern Data Analyst Internship | Hyderabad Healthcare Network Study**\n\n"
+            "**Healthcare Data Analytics & Patient Segmentation Study | Hyderabad Network**\n\n"
             "This notebook demonstrates the synthetic generation of approximately 500,000 healthcare records "
             "across 4 Hyderabad hospitals, followed by data cleaning, DOB-to-age conversion, and critical transaction-level "
             "GST validation."
@@ -109,7 +109,7 @@ def create_notebook_02():
     cells = [
         md_cell(
             "# HospitalIQ – Phase 2: Comprehensive Exploratory Data Analysis & Feature Engineering\n"
-            "**YuvaIntern Data Analyst Internship | Hyderabad Healthcare Network Study**\n\n"
+            "**Healthcare Data Analytics & Patient Segmentation Study | Hyderabad Network**\n\n"
             "This notebook presents the clinical, demographic, operational, and financial EDA across the network, "
             "followed by non-leaking patient-level behavioral feature extraction."
         ),
@@ -154,7 +154,7 @@ def create_notebook_03():
     cells = [
         md_cell(
             "# HospitalIQ – Phase 3: RFM Segmentation, K-Means Clustering & Stability Analysis\n"
-            "**YuvaIntern Data Analyst Internship | Hyderabad Healthcare Network Study**\n\n"
+            "**Healthcare Data Analytics & Patient Segmentation Study | Hyderabad Network**\n\n"
             "This notebook executes RFM scoring, unsupervised K-Means clustering, cluster validation (Elbow Curve & Silhouette Scores), "
             "profile generation, and two-period longitudinal segment stability analysis."
         ),

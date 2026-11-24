@@ -66,7 +66,7 @@ def run_full_pipeline():
     """Execute complete HospitalIQ pipeline from end to end."""
     start_time = time.time()
     print("\n" + "#" * 70)
-    print("  HOSPITALIQ DATA ANALYST INTERNSHIP PROJECT - EXECUTION ENGINE")
+    print("  HOSPITALIQ HEALTHCARE ANALYTICS & SEGMENTATION PIPELINE")
     print("  Hyderabad Healthcare Network Patient Segmentation Study")
     print("#" * 70 + "\n")
     

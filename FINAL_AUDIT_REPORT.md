@@ -1,10 +1,10 @@
 # HospitalIQ – Final Project Audit Report
 
 **Project:** HospitalIQ – Hyderabad Healthcare Network Patient Segmentation Study  
-**Internship:** Data Analyst Internship – YuvaIntern (Hyderabad, Telangana)  
-**Internship Period:** 11 November 2026 – 6 January 2027 (8 Weeks)  
+**Domain:** Healthcare Analytics & Clinical Operations  
+**Evaluation Scope:** 8-Week Longitudinal Multi-Hospital Segmentation Study  
 **Audit Date:** 22 November 2026  
-**Auditor:** Senior Data Analyst, Healthcare Analytics Specialist & QA Evaluator  
+**Auditor:** Senior Healthcare Data Analyst & QA Evaluator  
 **Audit Evaluation Result:** **ALL 20 PHASES VERIFIED & PASSED**
 
 ---

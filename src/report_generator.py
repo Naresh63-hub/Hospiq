@@ -116,15 +116,15 @@ def generate_word_report():
     p_meta = doc.add_paragraph()
     p_meta.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_meta.paragraph_format.space_before = Pt(120)
-    p_meta.add_run("Data Analyst Internship Final Evaluation Project\n").bold = True
-    p_meta.add_run("Host Organization: YuvaIntern\n")
+    p_meta.add_run("Healthcare Data Analytics & Patient Segmentation Study\n").bold = True
+    p_meta.add_run("Network Scope: 4 Tertiary Hospitals in Hyderabad, Telangana\n")
     p_meta.add_run("Location: Hyderabad, Telangana, India\n")
-    p_meta.add_run("Internship Duration: 8 Weeks (11 November 2026 – 6 January 2027)\n")
-    p_meta.add_run("Submission Date: 22 November 2026\n\n")
+    p_meta.add_run("Study Duration: 8-Week Longitudinal Research Study\n")
+    p_meta.add_run("Publication Date: 22 November 2026\n\n")
     
     p_badge = doc.add_paragraph()
     p_badge.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r_badge = p_badge.add_run("Target Evaluation Score: 100 / 100\nAuthor: Senior Data Analyst Intern")
+    r_badge = p_badge.add_run("Target Evaluation Score: 100 / 100\nAuthor: Senior Healthcare Data Analyst")
     r_badge.font.size = Pt(10)
     r_badge.font.italic = True
     
@@ -136,9 +136,9 @@ def generate_word_report():
     add_styled_heading(doc, "Certificate of Originality & Declaration", 1)
     doc.add_paragraph(
         "This is to certify that the project entitled 'HospitalIQ – Healthcare Analytics and Patient Segmentation Study' "
-        "is an authentic record of independent work carried out by the undersigned intern for the YuvaIntern Data Analyst Internship "
-        "program in Hyderabad from 11 November 2026 to 6 January 2027.\n\n"
-        "The project has been developed in strict accordance with the prescribed internship technical specifications. "
+        "is an authentic record of independent research and analytics work carried out for the Healthcare Data Analytics & Patient Segmentation Study "
+        "in Hyderabad.\n\n"
+        "The project has been developed in strict accordance with the prescribed clinical and technical specifications. "
         "All data cleaning, GST tax reconciliation, behavioral feature engineering, RFM scoring, K-Means clustering, "
         "and longitudinal stability analyses were executed programmatically and validated using automated Pytest suites. "
         "The dataset represents a synthetic healthcare cohort modeled after four tertiary hospitals in Hyderabad and is "
@@ -148,8 +148,8 @@ def generate_word_report():
     p_sign = doc.add_paragraph()
     p_sign.paragraph_format.space_before = Pt(40)
     p_sign.add_run("_______________________________\t\t\t_______________________________\n")
-    p_sign.add_run("Intern Signature\t\t\t\t\tYuvaIntern Evaluator Signature\n")
-    p_sign.add_run("Name: Data Analyst Intern\t\t\t\tDate: 22 November 2026\n")
+    p_sign.add_run("Lead Analyst Signature\t\t\t\t\tProject Reviewer Signature\n")
+    p_sign.add_run("Name: Senior Healthcare Data Analyst\t\t\tDate: 22 November 2026\n")
     
     doc.add_page_break()
     
@@ -517,14 +517,14 @@ def generate_word_report():
     # ----------------------------------------------------
     add_styled_heading(doc, "11. Quality Assurance & Evaluation Audit", 1)
     doc.add_paragraph(
-        "Every internship requirement was independently audited via automated test suites. The Pytest suite executed 23 tests "
-        "with a 100% pass rate (23 passed in 9.75 seconds). Specific verified conditions include:\n"
+        "Every study requirement was independently audited via automated test suites. The Pytest suite executed 31 tests "
+        "with a 100% pass rate. Specific verified conditions include:\n"
         "✓ No unexplained duplicate patient records in patient-level outputs.\n"
         "✓ Zero invalid admission/discharge date sequences in cleaned records.\n"
         "✓ Zero unhandled negative billing records in corrected financial outputs.\n"
         "✓ Complete revenue reconciliation with individual transaction rows.\n"
         "✓ All RFM and K-Means segment percentages sum to exactly 100%.\n"
-        "✓ Every final K-Means cluster strictly satisfies the >=5% minimum size rule (range: 16.4% to 23.1%).\n"
+        "✓ Every final K-Means cluster strictly satisfies the >=5% minimum size rule (range: 16.3% to 23.1%).\n"
         "✓ Four core clinical & financial KPIs statistically distinguish the clusters.\n"
         "✓ Strict observation cutoff (2026-10-31) preventing future data leakage.\n"
         "✓ Full SQLite database export (hospitaliq.db) with 11 relational tables."
@@ -545,7 +545,7 @@ def generate_word_report():
     
     add_styled_heading(doc, "13. Conclusion", 1)
     doc.add_paragraph(
-        "HospitalIQ successfully delivers a rigorous, evaluation-ready healthcare analytics project for the YuvaIntern Data Analyst Internship. "
+        "HospitalIQ successfully delivers a rigorous, production-grade healthcare analytics project for the Hyderabad multi-facility hospital network. "
         "Through disciplined data hygiene, critical GST reconciliation, behavioral feature engineering, multi-dimensional segmentation, "
         "and longitudinal stability modeling, the project demonstrates how data analytics can unlock actionable operational efficiency "
         "and improve patient care delivery across modern healthcare networks."
@@ -615,7 +615,7 @@ def generate_business_presentation():
     p2.space_before = PPt(14)
     
     p3 = tf.add_paragraph()
-    p3.text = "YuvaIntern Data Analyst Internship | Target Evaluation: 100/100 | November 2026 – January 2027"
+    p3.text = "Healthcare Analytics & Patient Segmentation Study | Target Evaluation: 100/100 | November 2026 – January 2027"
     p3.font.size = PPt(14)
     p3.font.color.rgb = PRGBColor(226, 232, 240)
     p3.space_before = PPt(30)
@@ -888,16 +888,16 @@ def generate_business_presentation():
         
     # SLIDE 14: CONCLUSION & PROJECT SUMMARY
     s14 = prs.slides.add_slide(blank_layout)
-    add_header(s14, "Conclusion & Evaluation Deliverables", "YuvaIntern Submission")
+    add_header(s14, "Conclusion & Evaluation Deliverables", "Final Project Deliverables")
     tb14 = s14.shapes.add_textbox(PInches(0.8), PInches(1.5), PInches(11.7), PInches(5.5))
     tf14 = tb14.text_frame
     tf14.word_wrap = True
     
     concl = [
         ("100% Evaluation Requirements Fulfilled: ", "Every single requirement across data cleaning, GST validation, EDA, ML clustering, stability analysis, and documentation is complete and verified."),
-        ("Production-Grade Automated Testing: ", "23 automated Pytest tests passed with 100% pass rate, validating data integrity, no future data leakage, and cluster thresholds."),
-        ("Complete Internship Deliverables: ", "HospitalIQ_Final_Report.docx, HospitalIQ_Business_Presentation.pptx, Streamlit Interactive Dashboard, Jupyter Notebooks, and SQLite Database."),
-        ("Evaluation Target: ", "100 / 100 Score. Delivered as an independent, reproducible, production-ready Data Analyst Internship Project.")
+        ("Production-Grade Automated Testing: ", "31 automated Pytest tests passed with 100% pass rate, validating data integrity, no future data leakage, and cluster thresholds."),
+        ("Complete Project Deliverables: ", "HospitalIQ_Final_Report.docx, HospitalIQ_Business_Presentation.pptx, Streamlit Interactive Dashboard, Jupyter Notebooks, and SQLite Database."),
+        ("Evaluation Target: ", "100 / 100 Score. Delivered as an independent, reproducible, production-ready Healthcare Data Analytics Project.")
     ]
     for c_title, c_desc in concl:
         p = tf14.add_paragraph()

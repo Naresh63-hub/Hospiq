@@ -1,8 +1,7 @@
-# HospitalIQ – Final Internship Submission Checklist
+# HospitalIQ – Final Project Evaluation Checklist
 
-**Internship:** Data Analyst Internship – YuvaIntern (Hyderabad, Telangana)  
 **Project Title:** HospitalIQ – Hyderabad Healthcare Network Patient Segmentation Study  
-**Internship Duration:** 11 November 2026 – 6 January 2027 (8 Weeks)  
+**Study Scope:** 8-Week Multi-Hospital Healthcare Analytics Study (Hyderabad Network)  
 **Target Score:** Highest Achievable Grade (Target 100/100)  
 **Audit & Verification Date:** 22 November 2026  
 
@@ -10,7 +9,7 @@
 
 ## Final Verification Matrix
 
-| # | Internship Evaluation Requirement | Target Standard | Actual Result / Measured Value | Verification Status | Supporting Evidence Location |
+| # | Project Evaluation Requirement | Target Standard | Actual Result / Measured Value | Verification Status | Supporting Evidence Location |
 |---|---|---|---|---|---|
 | **1** | **Dataset Generation Scale** | ~500,000 synthetic records across 4 Hyderabad hospitals | **501,600 verified records** (Patients: 65k, OPD: 220k, Adm: 45k, Lab: 90k, Bill: 81.6k) | **VERIFIED** | `data/raw/*.csv`, `tests/test_data_generation.py` |
 | **2** | **Synthetic Data Disclosure** | Clearly labeled as synthetic data | **Transparently disclosed** on Page 1, README, and `dataset_type` column | **VERIFIED** | `data/raw/patients.csv`, Section 1 of Word report |

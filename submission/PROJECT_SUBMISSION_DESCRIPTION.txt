@@ -1,13 +1,11 @@
 ========================================================================================
-HOSPITALIQ – COMPLETE DATA ANALYST INTERNSHIP PROJECT SUBMISSION DESCRIPTION
+HOSPITALIQ – HEALTHCARE ANALYTICS & PATIENT SEGMENTATION STUDY DESCRIPTION
 ========================================================================================
 
-Internship: Data Analyst Internship
-Organization: YuvaIntern
+Project: HospitalIQ – Healthcare Analytics and Patient Segmentation Study
 Location: Hyderabad, Telangana, India
-Internship Duration: 8 Weeks (11 November 2026 – 6 January 2027)
-Project Title: HospitalIQ – Healthcare Analytics and Patient Segmentation Study
-Author: Senior Data Analyst Intern
+Study Duration: 8-Week Longitudinal Multi-Hospital Study
+Role: Senior Healthcare Data Analyst
 Target Score: 100 / 100
 
 ----------------------------------------------------------------------------------------

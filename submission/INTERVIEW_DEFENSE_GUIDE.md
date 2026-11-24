@@ -1,7 +1,7 @@
 # HospitalIQ: Technical Interview & Project Defense Guide
 
-**Internship:** Data Analyst Internship – YuvaIntern (Hyderabad, Telangana)  
 **Project:** HospitalIQ – Hyderabad Healthcare Network Patient Segmentation Study  
+**Domain:** Healthcare Analytics & Clinical Machine Learning Operations  
 **Target:** Master-level presentation defense, technical viva, and senior data analyst job interview mastery.
 
 ---
