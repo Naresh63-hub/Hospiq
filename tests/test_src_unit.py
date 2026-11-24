@@ -256,3 +256,50 @@ def test_extract_patient_features_unit():
     assert p1["monetary_total"] == 26500.0
     assert p1["department_diversity"] == 2
 
+
+# =============================================================================
+# 6. ADVANCED ML & STATISTICAL HYPOTHESIS TESTS
+# =============================================================================
+
+def test_statistical_hypothesis_tests_unit():
+    """Test ANOVA and Kruskal-Wallis hypothesis testing across patient clusters."""
+    mock_df = pd.DataFrame({
+        "cluster_id": [0, 0, 1, 1, 2, 2],
+        "avg_length_of_stay": [0.1, 0.2, 12.0, 13.0, 0.5, 0.4],
+        "monetary_total": [20000.0, 22000.0, 25000.0, 24000.0, 1000.0, 1200.0],
+        "visit_frequency": [1.5, 2.0, 4.0, 4.5, 1.0, 1.2],
+        "admission_frequency": [0, 0, 1, 1, 0, 0]
+    })
+    res = km.compute_statistical_hypothesis_tests(mock_df)
+    assert len(res) == 4
+    assert "anova_f_stat" in res.columns
+    assert "kruskal_h_stat" in res.columns
+    assert "statistical_significance" in res.columns
+    assert (res["null_hypothesis_rejected"] == True).all()
+
+
+def test_pca_projection_unit():
+    """Test PCA 2D projection and coordinate extraction."""
+    X_scaled = np.random.randn(50, 8)
+    labels = np.random.choice([0, 1, 2, 3, 4], size=50)
+    names_map = {0: "C0", 1: "C1", 2: "C2", 3: "C3", 4: "C4"}
+    pca_df, chart_path = km.compute_pca_projection(X_scaled, labels, names_map)
+    assert len(pca_df) == 50
+    assert "PC1" in pca_df.columns
+    assert "PC2" in pca_df.columns
+    assert os.path.exists(chart_path)
+
+
+def test_compute_financial_scenarios_unit():
+    """Test Bear, Base, and Bull financial scenario modeling."""
+    scenarios = br.compute_financial_scenarios()
+    assert len(scenarios) == 3
+    assert set(scenarios["scenario"].tolist()) == {
+        "Bear Case (Conservative)",
+        "Base Case (Expected)",
+        "Bull Case (Optimistic)"
+    }
+    assert (scenarios["expected_benefit_inr"] > scenarios["total_cost_inr"]).all()
+    assert scenarios.loc[scenarios["scenario"] == "Bull Case (Optimistic)", "roi_pct"].iloc[0] > \
+           scenarios.loc[scenarios["scenario"] == "Base Case (Expected)", "roi_pct"].iloc[0]
+

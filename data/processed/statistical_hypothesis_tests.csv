@@ -1,0 +1,5 @@
+kpi_column,kpi_label,anova_f_stat,anova_p_val,anova_p_val_str,kruskal_h_stat,kruskal_p_val,kruskal_p_val_str,null_hypothesis_rejected,statistical_significance
+avg_length_of_stay,Inpatient Length of Stay (Days),1471.06,0.0,< 0.0001,53390.54,0.0,< 0.0001,True,p < 0.001 (Highly Significant)
+monetary_total,Total Patient Spend (INR),2000.39,0.0,< 0.0001,47068.86,0.0,< 0.0001,True,p < 0.001 (Highly Significant)
+visit_frequency,Total Interaction Frequency,5344.19,0.0,< 0.0001,33120.87,0.0,< 0.0001,True,p < 0.001 (Highly Significant)
+admission_frequency,Inpatient Admission Frequency,21513.5,0.0,< 0.0001,53024.9,0.0,< 0.0001,True,p < 0.001 (Highly Significant)

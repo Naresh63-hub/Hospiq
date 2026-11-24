@@ -7,6 +7,10 @@ implementation costs, expected benefits, and measurable target KPIs.
 
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
+
+FIGURE_DIR = os.path.join("reports", "figures")
+os.makedirs(FIGURE_DIR, exist_ok=True)
 
 RECOMMENDATIONS = [
     {
@@ -107,12 +111,99 @@ def get_recommendations_dataframe() -> pd.DataFrame:
     return pd.DataFrame(RECOMMENDATIONS)
 
 
+def compute_financial_scenarios(df_recs: pd.DataFrame = None) -> pd.DataFrame:
+    """Model Bear, Base, and Bull financial sensitivity scenarios for executive decision makers."""
+    if df_recs is None:
+        df_recs = get_recommendations_dataframe()
+        
+    base_cost = df_recs["estimated_cost_inr"].sum()
+    base_benefit = df_recs["expected_benefit_inr"].sum()
+    
+    scenarios = [
+        {
+            "scenario": "Bear Case (Conservative)",
+            "adoption_rate_pct": 60,
+            "total_cost_inr": round(base_cost * 0.80, 2),
+            "expected_benefit_inr": round(base_benefit * 0.60, 2),
+            "net_annual_benefit_inr": round((base_benefit * 0.60) - (base_cost * 0.80), 2),
+            "roi_pct": round((((base_benefit * 0.60) - (base_cost * 0.80)) / (base_cost * 0.80)) * 100, 1),
+            "bed_days_freed": int(8400 * 0.60),
+            "key_assumption": "Lower recall responsiveness; conservative digital adoption in chronic cohort"
+        },
+        {
+            "scenario": "Base Case (Expected)",
+            "adoption_rate_pct": 100,
+            "total_cost_inr": round(base_cost, 2),
+            "expected_benefit_inr": round(base_benefit, 2),
+            "net_annual_benefit_inr": round(base_benefit - base_cost, 2),
+            "roi_pct": round(((base_benefit - base_cost) / base_cost) * 100, 1),
+            "bed_days_freed": 8400,
+            "key_assumption": "Expected clinical protocol adherence; 15% digital care bundle uptake"
+        },
+        {
+            "scenario": "Bull Case (Optimistic)",
+            "adoption_rate_pct": 130,
+            "total_cost_inr": round(base_cost * 1.10, 2),
+            "expected_benefit_inr": round(base_benefit * 1.30, 2),
+            "net_annual_benefit_inr": round((base_benefit * 1.30) - (base_cost * 1.10), 2),
+            "roi_pct": round((((base_benefit * 1.30) - (base_cost * 1.10)) / (base_cost * 1.10)) * 100, 1),
+            "bed_days_freed": int(8400 * 1.30),
+            "key_assumption": "Rapid physician protocol alignment; high patient recall conversion"
+        }
+    ]
+    return pd.DataFrame(scenarios)
+
+
+def plot_financial_scenarios(scenarios_df: pd.DataFrame) -> str:
+    """Generate executive comparison bar chart for Bear, Base, and Bull financial scenarios."""
+    import numpy as np
+    fig, ax = plt.subplots(figsize=(9, 5))
+    
+    scenarios = scenarios_df["scenario"].str.split(" ").str[0].tolist()
+    x = np.arange(len(scenarios))
+    width = 0.25
+    
+    costs_cr = scenarios_df["total_cost_inr"] / 1e7
+    benefits_cr = scenarios_df["expected_benefit_inr"] / 1e7
+    net_cr = scenarios_df["net_annual_benefit_inr"] / 1e7
+    
+    b1 = ax.bar(x - width, costs_cr, width, label="Investment Cost", color="#e53e3e", alpha=0.85, edgecolor="black")
+    b2 = ax.bar(x, benefits_cr, width, label="Expected Benefit", color="#2b6cb0", alpha=0.85, edgecolor="black")
+    b3 = ax.bar(x + width, net_cr, width, label="Net Annual Return", color="#27ae60", alpha=0.85, edgecolor="black")
+    
+    for bar in list(b1) + list(b2) + list(b3):
+        h = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2.0, h + 0.3, f"₹{h:.2f}Cr", ha="center", va="bottom", fontsize=9, fontweight="bold")
+        
+    ax.set_title("Executive Sensitivity Analysis: Projected Financial Impact by Scenario", fontweight="bold", fontsize=12)
+    ax.set_ylabel("Financial Value (₹ Crores)", fontweight="bold")
+    ax.set_xticks(x)
+    ax.set_xticklabels(scenarios, fontweight="bold", fontsize=11)
+    ax.set_ylim(0, max(benefits_cr) * 1.25)
+    ax.grid(True, linestyle="--", alpha=0.5, axis="y")
+    ax.legend(framealpha=0.9, fontsize=10)
+    fig.tight_layout()
+    chart_path = os.path.join(FIGURE_DIR, "scenario_financial_analysis.png")
+    fig.savefig(chart_path, dpi=200)
+    plt.close(fig)
+    print(f"Scenario financial analysis chart saved to: {chart_path}")
+    return chart_path
+
+
 def save_recommendations_report(output_path: str):
-    """Save recommendations as formatted CSV."""
+    """Save recommendations as formatted CSV and compute scenario models."""
     df = get_recommendations_dataframe()
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)
     print(f"Saved recommendations table to: {output_path}")
+    
+    # Scenarios
+    scenarios_df = compute_financial_scenarios(df)
+    scenario_path = os.path.join(os.path.dirname(output_path), "scenario_financial_modeling.csv")
+    scenarios_df.to_csv(scenario_path, index=False)
+    print(f"Saved scenario modeling table to: {scenario_path}")
+    
+    plot_financial_scenarios(scenarios_df)
     return df
 
 

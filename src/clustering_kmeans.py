@@ -18,6 +18,8 @@ from sklearn.preprocessing import StandardScaler, RobustScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.decomposition import PCA
+from scipy.stats import f_oneway, kruskal
 
 FIGURE_DIR = os.path.join("reports", "figures")
 os.makedirs(FIGURE_DIR, exist_ok=True)
@@ -337,6 +339,140 @@ def compute_cluster_feature_importance(X_scaled: np.ndarray, labels: np.ndarray,
     return fi_df.sort_values(by="importance_pct", ascending=False)
 
 
+def compute_statistical_hypothesis_tests(df_clustered: pd.DataFrame) -> pd.DataFrame:
+    """Execute One-Way ANOVA and non-parametric Kruskal-Wallis H-tests across clusters."""
+    print("Executing One-Way ANOVA and Kruskal-Wallis hypothesis tests across clusters...")
+    test_metrics = [
+        ("avg_length_of_stay", "Inpatient Length of Stay (Days)"),
+        ("monetary_total", "Total Patient Spend (INR)"),
+        ("visit_frequency", "Total Interaction Frequency"),
+        ("admission_frequency", "Inpatient Admission Frequency"),
+    ]
+    
+    rows = []
+    clusters = sorted(df_clustered["cluster_id"].unique())
+    
+    for col, label in test_metrics:
+        group_data = [df_clustered.loc[df_clustered["cluster_id"] == c, col].dropna().values for c in clusters]
+        
+        f_stat, p_val = f_oneway(*group_data)
+        h_stat, k_pval = kruskal(*group_data)
+        
+        rows.append({
+            "kpi_column": col,
+            "kpi_label": label,
+            "anova_f_stat": round(float(f_stat), 2),
+            "anova_p_val": float(p_val),
+            "anova_p_val_str": "< 0.0001" if p_val < 0.0001 else f"{p_val:.4f}",
+            "kruskal_h_stat": round(float(h_stat), 2),
+            "kruskal_p_val": float(k_pval),
+            "kruskal_p_val_str": "< 0.0001" if k_pval < 0.0001 else f"{k_pval:.4f}",
+            "null_hypothesis_rejected": True if p_val < 0.05 else False,
+            "statistical_significance": "p < 0.001 (Highly Significant)" if p_val < 0.001 else "Not Significant"
+        })
+        
+    res_df = pd.DataFrame(rows)
+    print("Hypothesis Testing Results:")
+    for _, r in res_df.iterrows():
+        print(f"  {r['kpi_label']}: ANOVA F={r['anova_f_stat']:,} (p={r['anova_p_val_str']}), Kruskal H={r['kruskal_h_stat']:,}")
+    return res_df
+
+
+def compute_pca_projection(X_scaled: np.ndarray, labels: np.ndarray, cluster_names_map: dict) -> tuple[pd.DataFrame, str]:
+    """Fit 2D Principal Component Analysis (PCA) and plot cluster separation."""
+    print("Computing 2D PCA cluster projection and variance decomposition...")
+    pca = PCA(n_components=2, random_state=42)
+    coords = pca.fit_transform(X_scaled)
+    var1, var2 = pca.explained_variance_ratio_ * 100
+    
+    # Sample 4,000 points for crisp visual clarity
+    np.random.seed(42)
+    sample_idx = np.random.choice(len(coords), size=min(4000, len(coords)), replace=False)
+    
+    pca_df = pd.DataFrame({
+        "PC1": coords[sample_idx, 0],
+        "PC2": coords[sample_idx, 1],
+        "cluster_id": labels[sample_idx]
+    })
+    pca_df["cluster_name"] = pca_df["cluster_id"].map(cluster_names_map)
+    
+    colors = ["#e53e3e", "#2b6cb0", "#d69e2e", "#805ad5", "#718096"]
+    
+    fig, ax = plt.subplots(figsize=(9.5, 6))
+    for cid in sorted(pca_df["cluster_id"].unique()):
+        sub = pca_df[pca_df["cluster_id"] == cid]
+        ax.scatter(sub["PC1"], sub["PC2"], label=cluster_names_map.get(cid, f"Cluster {cid}"),
+                   color=colors[cid % len(colors)], alpha=0.45, s=22, edgecolors="none")
+        
+        # Plot Centroid
+        cent_x, cent_y = sub["PC1"].mean(), sub["PC2"].mean()
+        ax.scatter(cent_x, cent_y, color=colors[cid % len(colors)], s=160, edgecolors="black", linewidth=2.0, marker="X")
+        ax.text(cent_x, cent_y + 0.35, f"C{cid}", fontsize=11, fontweight="bold", ha="center",
+                bbox=dict(boxstyle="round,pad=0.2", facecolor="white", alpha=0.85, edgecolor=colors[cid % len(colors)]))
+        
+    ax.set_title(f"K-Means 7: 2D Principal Component Analysis (Total Variance Explained: {var1+var2:.1f}%)", fontweight="bold", fontsize=12)
+    ax.set_xlabel(f"Principal Component 1 ({var1:.1f}% Variance Explained - Clinical Acuity & LOS)", fontweight="bold")
+    ax.set_ylabel(f"Principal Component 2 ({var2:.1f}% Variance Explained - Ambulatory Engagement)", fontweight="bold")
+    ax.legend(title="Patient Operational Segments", loc="upper right", framealpha=0.9, fontsize=9)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    fig.tight_layout()
+    chart_path = os.path.join(FIGURE_DIR, "kmeans_pca_2d_projection.png")
+    fig.savefig(chart_path, dpi=200)
+    plt.close(fig)
+    print(f"PCA 2D projection chart saved to: {chart_path}")
+    return pca_df, chart_path
+
+
+def plot_cluster_radar_profiles(profile: pd.DataFrame) -> str:
+    """Generate normalized multi-dimensional radar / spider chart across segments."""
+    print("Generating multi-dimensional radar profile chart...")
+    categories = [
+        ("avg_monetary_inr", "Total Spend"),
+        ("avg_visit_frequency", "Frequency"),
+        ("avg_los_days", "Length of Stay"),
+        ("admission_rate_pct", "Admission %"),
+        ("avg_dept_diversity", "Dept Diversity"),
+        ("avg_lab_utilization", "Lab Util"),
+    ]
+    cat_cols = [c[0] for c in categories]
+    cat_labels = [c[1] for c in categories]
+    
+    # Normalize each column 0..1 for radar comparison
+    norm_df = profile[["cluster_id", "cluster_name"]].copy()
+    for col in cat_cols:
+        col_min = profile[col].min()
+        col_max = profile[col].max()
+        norm_df[col] = (profile[col] - col_min) / (col_max - col_min + 1e-9)
+        
+    num_vars = len(cat_labels)
+    angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+    angles += angles[:1]
+    
+    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    colors = ["#e53e3e", "#2b6cb0", "#d69e2e", "#805ad5", "#718096"]
+    
+    for idx, row in norm_df.iterrows():
+        values = [row[col] for col in cat_cols]
+        values += values[:1]
+        cid = int(row["cluster_id"])
+        cname = row["cluster_name"]
+        ax.plot(angles, values, color=colors[cid % len(colors)], linewidth=2.2, label=f"C{cid}: {cname}")
+        ax.fill(angles, values, color=colors[cid % len(colors)], alpha=0.15)
+        
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    ax.set_thetagrids(np.degrees(angles[:-1]), cat_labels, fontweight="bold", fontsize=10)
+    ax.set_ylim(0, 1.05)
+    ax.set_title("K-Means 8: Multi-Dimensional Behavioral Radar Signatures", y=1.08, fontweight="bold", fontsize=12)
+    ax.legend(loc="upper right", bbox_to_anchor=(1.35, 1.1), fontsize=8.5, framealpha=0.9)
+    fig.tight_layout()
+    chart_path = os.path.join(FIGURE_DIR, "kmeans_cluster_radar_profiles.png")
+    fig.savefig(chart_path, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Radar chart saved to: {chart_path}")
+    return chart_path
+
+
 def run_kmeans_clustering(features_path: str, rfm_path: str, output_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Execute complete K-Means clustering pipeline."""
     print("=" * 60)
@@ -372,6 +508,20 @@ def run_kmeans_clustering(features_path: str, rfm_path: str, output_path: str) -
     fi_df = compute_cluster_feature_importance(X_scaled, df_clustered["cluster_id"].values, CLUSTER_FEATURES)
     fi_path = os.path.join(os.path.dirname(output_path), "kmeans_feature_importance.csv")
     fi_df.to_csv(fi_path, index=False)
+    
+    # Statistical Hypothesis Testing (ANOVA & Kruskal-Wallis)
+    hypo_df = compute_statistical_hypothesis_tests(df_clustered)
+    hypo_path = os.path.join(os.path.dirname(output_path), "statistical_hypothesis_tests.csv")
+    hypo_df.to_csv(hypo_path, index=False)
+    
+    # 2D PCA Cluster Projection
+    c_names_map = dict(zip(profile["cluster_id"], profile["cluster_name"]))
+    pca_df, pca_chart = compute_pca_projection(X_scaled, df_clustered["cluster_id"].values, c_names_map)
+    pca_path = os.path.join(os.path.dirname(output_path), "kmeans_pca_coordinates.csv")
+    pca_df.to_csv(pca_path, index=False)
+    
+    # Multi-Dimensional Radar Profiles
+    radar_chart = plot_cluster_radar_profiles(profile)
     
     print("=" * 60)
     print("K-MEANS CLUSTERING COMPLETE")

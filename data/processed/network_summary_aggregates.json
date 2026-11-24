@@ -97,5 +97,87 @@
     "OPD Consultation": 2.2,
     "Pharmacy & Consumables": 5.63,
     "Surgery & OT Charges": 31.47
-  }
+  },
+  "statistical_hypothesis_tests": [
+    {
+      "kpi_column": "avg_length_of_stay",
+      "kpi_label": "Inpatient Length of Stay (Days)",
+      "anova_f_stat": 1471.06,
+      "anova_p_val": 0.0,
+      "anova_p_val_str": "< 0.0001",
+      "kruskal_h_stat": 53390.54,
+      "kruskal_p_val": 0.0,
+      "kruskal_p_val_str": "< 0.0001",
+      "null_hypothesis_rejected": true,
+      "statistical_significance": "p < 0.001 (Highly Significant)"
+    },
+    {
+      "kpi_column": "monetary_total",
+      "kpi_label": "Total Patient Spend (INR)",
+      "anova_f_stat": 2000.39,
+      "anova_p_val": 0.0,
+      "anova_p_val_str": "< 0.0001",
+      "kruskal_h_stat": 47068.86,
+      "kruskal_p_val": 0.0,
+      "kruskal_p_val_str": "< 0.0001",
+      "null_hypothesis_rejected": true,
+      "statistical_significance": "p < 0.001 (Highly Significant)"
+    },
+    {
+      "kpi_column": "visit_frequency",
+      "kpi_label": "Total Interaction Frequency",
+      "anova_f_stat": 5344.19,
+      "anova_p_val": 0.0,
+      "anova_p_val_str": "< 0.0001",
+      "kruskal_h_stat": 33120.87,
+      "kruskal_p_val": 0.0,
+      "kruskal_p_val_str": "< 0.0001",
+      "null_hypothesis_rejected": true,
+      "statistical_significance": "p < 0.001 (Highly Significant)"
+    },
+    {
+      "kpi_column": "admission_frequency",
+      "kpi_label": "Inpatient Admission Frequency",
+      "anova_f_stat": 21513.5,
+      "anova_p_val": 0.0,
+      "anova_p_val_str": "< 0.0001",
+      "kruskal_h_stat": 53024.9,
+      "kruskal_p_val": 0.0,
+      "kruskal_p_val_str": "< 0.0001",
+      "null_hypothesis_rejected": true,
+      "statistical_significance": "p < 0.001 (Highly Significant)"
+    }
+  ],
+  "scenario_financial_modeling": [
+    {
+      "scenario": "Bear Case (Conservative)",
+      "adoption_rate_pct": 60,
+      "total_cost_inr": 4920000.0,
+      "expected_benefit_inr": 10260000.0,
+      "net_annual_benefit_inr": 5340000.0,
+      "roi_pct": 108.5,
+      "bed_days_freed": 5040,
+      "key_assumption": "Lower recall responsiveness; conservative digital adoption in chronic cohort"
+    },
+    {
+      "scenario": "Base Case (Expected)",
+      "adoption_rate_pct": 100,
+      "total_cost_inr": 6150000.0,
+      "expected_benefit_inr": 17100000.0,
+      "net_annual_benefit_inr": 10950000.0,
+      "roi_pct": 178.0,
+      "bed_days_freed": 8400,
+      "key_assumption": "Expected clinical protocol adherence; 15% digital care bundle uptake"
+    },
+    {
+      "scenario": "Bull Case (Optimistic)",
+      "adoption_rate_pct": 130,
+      "total_cost_inr": 6765000.0,
+      "expected_benefit_inr": 22230000.0,
+      "net_annual_benefit_inr": 15465000.0,
+      "roi_pct": 228.6,
+      "bed_days_freed": 10920,
+      "key_assumption": "Rapid physician protocol alignment; high patient recall conversion"
+    }
+  ]
 }

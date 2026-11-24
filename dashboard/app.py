@@ -559,15 +559,48 @@ def main():
         c3.metric("Min Cluster Size Check", "16.4% (Passes >=5% rule)", delta="Verified")
         
         st.divider()
-        st.markdown("#### **Cluster Validation Visualizations**")
+        st.markdown("#### **Cluster Validation & Machine Learning Diagnostics**")
         v1, v2 = st.columns(2)
         with v1:
             if os.path.exists("reports/figures/kmeans_elbow_curve.png"):
-                st.image("reports/figures/kmeans_elbow_curve.png", caption="Inertia Elbow Curve across K=2..8", use_column_width=True)
+                st.image("reports/figures/kmeans_elbow_curve.png", caption="Inertia Elbow Curve across K=2..8", use_container_width=True)
+            if os.path.exists("reports/figures/kmeans_pca_2d_projection.png"):
+                st.image("reports/figures/kmeans_pca_2d_projection.png", caption="2D PCA Orthogonal Cluster Projection", use_container_width=True)
         with v2:
             if os.path.exists("reports/figures/kmeans_silhouette_scores.png"):
-                st.image("reports/figures/kmeans_silhouette_scores.png", caption="Silhouette Score Analysis across K=2..8", use_column_width=True)
+                st.image("reports/figures/kmeans_silhouette_scores.png", caption="Silhouette Score Analysis across K=2..8", use_container_width=True)
+            if os.path.exists("reports/figures/kmeans_cluster_radar_profiles.png"):
+                st.image("reports/figures/kmeans_cluster_radar_profiles.png", caption="Multi-Dimensional Behavioral Radar Signatures", use_container_width=True)
                 
+        if os.path.exists("reports/figures/kmeans_feature_importance.png"):
+            st.image("reports/figures/kmeans_feature_importance.png", caption="Random Forest Gini Feature Discriminative Power", use_container_width=True)
+            
+        st.divider()
+        st.markdown("#### **Statistical Significance Testing (ANOVA & Kruskal-Wallis H-Tests)**")
+        st.caption("Demonstrating that cluster differences across clinical and financial KPIs are statistically significant (p < 0.0001).")
+        agg_tests = data.get("aggregates", {}).get("statistical_hypothesis_tests")
+        hypo_path = os.path.join("data", "processed", "statistical_hypothesis_tests.csv")
+        if agg_tests:
+            hypo_df = pd.DataFrame(agg_tests)
+        elif os.path.exists(hypo_path):
+            hypo_df = pd.read_csv(hypo_path)
+        else:
+            hypo_df = pd.DataFrame()
+
+        if not hypo_df.empty:
+            st.dataframe(
+                hypo_df[["kpi_label", "anova_f_stat", "anova_p_val_str", "kruskal_h_stat", "statistical_significance"]],
+                column_config={
+                    "kpi_label": st.column_config.TextColumn("Clinical / Financial KPI", width="medium"),
+                    "anova_f_stat": st.column_config.NumberColumn("ANOVA F-Statistic", format="%.1f"),
+                    "anova_p_val_str": st.column_config.TextColumn("ANOVA p-value"),
+                    "kruskal_h_stat": st.column_config.NumberColumn("Kruskal-Wallis H", format="%.1f"),
+                    "statistical_significance": st.column_config.TextColumn("Significance Level")
+                },
+                use_container_width=True,
+                hide_index=True
+            )
+            
         st.divider()
         st.markdown("#### **K-Means Cluster Profiling Table**")
         if not profile_df.empty:
@@ -816,6 +849,36 @@ def main():
             st.bar_chart(sim_df.set_index("Initiative")["Revenue_Lakhs"])
             st.dataframe(sim_df, use_container_width=True, hide_index=True)
             export_dataframe_buttons(sim_df, "HospitalIQ_Simulated_Scenario_Projections")
+            
+            st.divider()
+            st.markdown("#### **Executive Sensitivity & Scenario Analysis (Bear vs. Base vs. Bull)**")
+            st.caption("Strategic capital allocation stress-testing across three distinct patient adoption cases.")
+            scen_path = os.path.join("data", "processed", "scenario_financial_modeling.csv")
+            agg_scen = data.get("aggregates", {}).get("scenario_financial_modeling")
+            if agg_scen:
+                scen_df = pd.DataFrame(agg_scen)
+            elif os.path.exists(scen_path):
+                scen_df = pd.read_csv(scen_path)
+            else:
+                scen_df = pd.DataFrame()
+
+            if not scen_df.empty:
+                st.dataframe(
+                    scen_df[["scenario", "adoption_rate_pct", "total_cost_inr", "expected_benefit_inr", "net_annual_benefit_inr", "roi_pct", "bed_days_freed"]],
+                    column_config={
+                        "scenario": st.column_config.TextColumn("Planning Scenario", width="medium"),
+                        "adoption_rate_pct": st.column_config.NumberColumn("Adoption %", format="%d%%"),
+                        "total_cost_inr": st.column_config.NumberColumn("Investment (₹)", format="₹%,.0f"),
+                        "expected_benefit_inr": st.column_config.NumberColumn("Expected Benefit (₹)", format="₹%,.0f"),
+                        "net_annual_benefit_inr": st.column_config.NumberColumn("Net Return (₹)", format="₹%,.0f"),
+                        "roi_pct": st.column_config.NumberColumn("ROI %", format="%.1f%%"),
+                        "bed_days_freed": st.column_config.NumberColumn("Bed Days Saved", format="%,d")
+                    },
+                    use_container_width=True,
+                    hide_index=True
+                )
+                if os.path.exists("reports/figures/scenario_financial_analysis.png"):
+                    st.image("reports/figures/scenario_financial_analysis.png", caption="Comparative Financial Performance across Scenarios", use_container_width=True)
 
 
 if __name__ == "__main__":

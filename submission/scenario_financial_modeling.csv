@@ -1,0 +1,4 @@
+scenario,adoption_rate_pct,total_cost_inr,expected_benefit_inr,net_annual_benefit_inr,roi_pct,bed_days_freed,key_assumption
+Bear Case (Conservative),60,4920000.0,10260000.0,5340000.0,108.5,5040,Lower recall responsiveness; conservative digital adoption in chronic cohort
+Base Case (Expected),100,6150000.0,17100000.0,10950000.0,178.0,8400,Expected clinical protocol adherence; 15% digital care bundle uptake
+Bull Case (Optimistic),130,6765000.0,22230000.0,15465000.0,228.6,10920,Rapid physician protocol alignment; high patient recall conversion
