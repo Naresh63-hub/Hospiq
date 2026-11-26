@@ -31,7 +31,7 @@
 | **18** | **Actionable Recommendations** | 6 segment plans with financials & ethics | **6 comprehensive action plans** with cost, benefit, ROI, and clinical safeguards | **VERIFIED** | `data/processed/business_recommendations.csv` |
 | **19** | **Streamlit BI Dashboard** | Multi-facility interactive analytics | **10-page fully operational dashboard** with filters, KPIs, and export buttons | **VERIFIED** | `dashboard/app.py`, `tests/test_dashboard_and_database.py` |
 | **20** | **Relational SQLite Database** | Reproducible relational storage | **11 relational tables**, `PRAGMA integrity_check` = ok | **VERIFIED** | `data/database/hospitaliq.db` |
-| **21** | **Automated Test Suite (QA)** | Automated test verification | **31 automated Pytest tests passed** (100% pass rate in 17.85s) | **VERIFIED** | `tests/`, `pytest --cov=src` |
+| **21** | **Automated Test Suite (QA)** | Automated test verification | **34 automated Pytest tests passed** (100% pass rate in 19.55s) | **VERIFIED** | `tests/`, `pytest --cov=src` |
 | **22** | **Executable Jupyter Notebooks** | End-to-end executable lifecycle | **3 verified notebooks** (`01_...`, `02_...`, `03_...`) | **VERIFIED** | `notebooks/*.ipynb` |
 | **23** | **Final Microsoft Word Report** | Academic report with 24 required sections | **`HospitalIQ_Final_Report.docx`** with 24 sections, embedded figures, and tables | **VERIFIED** | Root & `reports/HospitalIQ_Final_Report.docx` |
 | **24** | **Executive Presentation** | Professional 14-slide executive deck | **`HospitalIQ_Business_Presentation.pptx`** with 14 16:9 widescreen slides | **VERIFIED** | Root & `reports/HospitalIQ_Business_Presentation.pptx` |

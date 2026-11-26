@@ -32,7 +32,7 @@ Every claim made in the project documentation was empirically verified against u
 | **Minimum Cluster Size Rule** | >= 5.0% mandatory rule | Min: 16.33% (10,445 pts), Max: 23.09% (14,768 pts) | `data/processed/segment_profiles.csv` | **PASS** |
 | **Distinguishing KPIs** | >= 3 required | 4 verified KPIs (Spend, Visits, LOS, Admission %) | `reports/figures/kmeans_04_distinguishing_kpis.png` | **PASS** |
 | **Longitudinal Cohort Tracked**| 53,434 common patients | Retention: 34.75%, Migration: 65.25%, ARI: 0.0449 | `reports/figures/segment_migration_heatmap.png`| **PASS** |
-| **Automated Test Suite** | 23 integration tests | 31 tests (23 integration + 8 direct unit tests) | `pytest --cov=src` (100% pass rate) | **PASS** |
+| **Automated Test Suite** | 23 integration tests | 34 tests (23 integration + 11 direct unit tests) | `pytest --cov=src` (100% pass rate) | **PASS** |
 | **Database Integrity** | SQLite hospitaliq.db | 11 relational tables, PRAGMA check = ok | `PRAGMA integrity_check` verified | **PASS** |
 
 ---
@@ -258,14 +258,14 @@ Every claim made in the project documentation was empirically verified against u
 ### Phase 16: Automated Quality Assurance and Testing Audit
 - **Requirement:** Automated Pytest suite verifying referential integrity, tax logic, non-leaking features, cluster size thresholds, stability metrics, and database health.
 - **Verification Method:** Execution of `python -m pytest --cov=src --cov-report=term-missing`.
-- **Actual Result:** **31 passed in 17.85s (100% pass rate)**.
+- **Actual Result:** **34 passed in 19.55s (100% pass rate)**.
   - `tests/test_billing_gst_correction.py` (4 tests) — PASSED
   - `tests/test_dashboard_and_database.py` (2 tests) — PASSED
   - `tests/test_data_cleaning.py` (4 tests) — PASSED
   - `tests/test_data_generation.py` (4 tests) — PASSED
   - `tests/test_feature_engineering.py` (3 tests) — PASSED
   - `tests/test_segmentation.py` (4 tests) — PASSED
-  - `tests/test_src_unit.py` (8 unit tests) — PASSED
+  - `tests/test_src_unit.py` (11 unit tests) — PASSED
   - `tests/test_stability.py` (2 tests) — PASSED
 - **Evidence:** Pytest terminal output and execution logs.
 - **Status:** **PASS**

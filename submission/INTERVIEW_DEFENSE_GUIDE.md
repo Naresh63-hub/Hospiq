@@ -205,12 +205,12 @@ We solved this via a **hybrid dual-layer architecture**:
 
 ### Q17: What automated tests were implemented, and what do they verify?
 **Model Answer:**  
-"We developed a 31-test automated Pytest suite achieving a 100% pass rate:
+"We developed a 34-test automated Pytest suite achieving a 100% pass rate:
 * `test_data_generation.py`: Verifies 500k scale, synthetic data labeling, and 4 hospital representation.
 * `test_data_cleaning.py`: Verifies 0 missing ages, 0 invalid dates, and 100% referential integrity across all tables.
 * `test_billing_gst_correction.py`: Proves rule-based tax logic (no blind 1.18 division) and zero negative billing amounts.
 * `test_feature_engineering.py`: Verifies temporal boundary enforcement and zero future data leakage.
 * `test_segmentation.py`: Validates RFM quintiles, K-Means $\ge 5\%$ minimum cluster size rule, and 4 distinguishing KPIs.
 * `test_stability.py`: Validates common cohort tracking and migration matrix mathematical consistency.
-* `test_src_unit.py`: Direct unit tests exercising core transformation functions.
+* `test_src_unit.py`: 11 unit tests exercising core functions, ANOVA/Kruskal-Wallis hypothesis tests, PCA projections, and 3-tier financial scenario modeling.
 * `test_dashboard_and_database.py`: Validates SQLite relational schema (`PRAGMA integrity_check`) and dashboard data loading."

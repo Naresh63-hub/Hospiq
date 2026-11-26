@@ -36,7 +36,7 @@
 | **22** | **Business presentation** | **COMPLETE** | `reports/HospitalIQ_Business_Presentation.pptx`, `HospitalIQ_Business_Presentation.pptx` | **PASSED:** 14-slide 16:9 executive PowerPoint presentation created using actual project charts and figures. | None |
 | **23** | **Complete Word report** | **COMPLETE** | `reports/HospitalIQ_Final_Report.docx`, `HospitalIQ_Final_Report.docx` | **PASSED:** Comprehensive 24-section Microsoft Word document created with formal cover page, certificate, tables, and embedded figures. | None |
 | **24** | **GitHub-ready repository** | **COMPLETE** | `README.md`, `.gitignore`, `requirements.txt`, `notebooks/`, `src/` | **PASSED:** Clean modular repository architecture prepared locally with no committed secrets. | None |
-| **25** | **Automated tests** | **COMPLETE** | `tests/test_*.py` | **PASSED:** 23 automated Pytest tests executed with 100% pass rate in 9.75s. | None |
+| **25** | **Automated tests** | **COMPLETE** | `tests/test_*.py` | **PASSED:** 34 automated Pytest tests executed with 100% pass rate in 19.55s. | None |
 | **26** | **Reproducible results** | **COMPLETE** | `run_pipeline.py`, `data/database/hospitaliq.db` | **PASSED:** Full pipeline executes end-to-end in <60 seconds; SQLite database fully populated with 11 tables. | None |
 
 ---
