@@ -24,7 +24,7 @@
 | **Live Interactive Dashboard** | 11-page Streamlit BI App with Patient Persona Classifier & ROI Simulator | Web App | [👉 Launch Live Dashboard](https://hospiq-n.streamlit.app/) |
 | **Executive Web Showcase** | Interactive executive portfolio showcase with animated metric counters | HTML5 | [🌐 View Web Showcase](docs/index.html) |
 | **Comprehensive Final Report** | 24-section formal academic and executive report with embedded figures | Word (.docx) | [📥 Download Final Report (.docx)](submission/HospitalIQ_Final_Report.docx) |
-| **Executive Presentation Deck**| 14 widescreen strategy slides with empirical charts & financial models | PPTX (.pptx) | [📥 Download Presentation (.pptx)](submission/HospitalIQ_Business_Presentation.pptx) |
+| **Executive Presentation Deck**| 17 widescreen strategy slides with empirical charts & financial models | PPTX (.pptx) | [📥 Download Presentation (.pptx)](submission/HospitalIQ_Business_Presentation.pptx) |
 | **Pre-Rendered Notebooks** | 3 executed Jupyter notebooks with persistent tables, logs & plots | .ipynb | [📓 Notebook 01](notebooks/01_data_generation_cleaning.ipynb) / [02](notebooks/02_eda_feature_engineering.ipynb) / [03](notebooks/03_rfm_kmeans_clustering.ipynb) |
 | **Statistical Hypothesis Tests** | Parametric ANOVA & Kruskal-Wallis inferential test statistics | CSV | [📊 View Hypothesis Tests (.csv)](data/processed/statistical_hypothesis_tests.csv) |
 | **Scenario Financial Models** | Bear, Base, and Bull scenario planning models with ROI projections | CSV | [📈 View Scenario Models (.csv)](data/processed/scenario_financial_modeling.csv) |
@@ -350,7 +350,7 @@ HospitalIQ/
 │   └── test_dashboard_and_database.py
 ├── reports/
 │   ├── HospitalIQ_Final_Report.docx  # Complete 24-section Word Project Report
-│   ├── HospitalIQ_Business_Presentation.pptx # 14-slide 16:9 Strategy Presentation Deck
+│   ├── HospitalIQ_Business_Presentation.pptx # 17-slide 16:9 Strategy Presentation Deck
 │   └── figures/                      # All 20+ saved high-resolution charts
 ├── submission/                       # All evaluated deliverables for direct grading
 │   ├── HospitalIQ_Final_Report.docx
