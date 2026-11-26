@@ -13,7 +13,6 @@ Sequentially executes:
 """
 
 import os
-import sys
 import time
 import sqlite3
 import pandas as pd

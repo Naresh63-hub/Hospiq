@@ -3,7 +3,6 @@
 import os
 import sqlite3
 import pytest
-import pandas as pd
 from dashboard.app import load_all_data
 
 DB_PATH = os.path.join("data", "database", "hospitaliq.db")

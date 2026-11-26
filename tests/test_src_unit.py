@@ -6,10 +6,8 @@ import pandas as pd
 import numpy as np
 
 import src.data_cleaner as dc
-import src.data_generator as dg
 import src.segmentation_rfm as rfm
 import src.clustering_kmeans as km
-import src.stability_analysis as sa
 import src.business_recommendations as br
 import src.feature_engineering as fe
 

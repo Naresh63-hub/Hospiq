@@ -41,6 +41,7 @@ venv.bak/
 .idea/
 *.swp
 *.swo
+~$*
 
 # Testing & Coverage
 .pytest_cache/

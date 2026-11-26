@@ -23,7 +23,6 @@ A fictional Hyderabad healthcare network consisting of four tertiary hospitals:
 import os
 import io
 import pandas as pd
-import numpy as np
 import altair as alt
 import streamlit as st
 

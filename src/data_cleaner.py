@@ -12,9 +12,7 @@ Performs thorough healthcare data cleaning:
 
 import os
 import re
-import numpy as np
 import pandas as pd
-from datetime import datetime
 
 # Reference observation cutoff date for age and recency calculations
 OBSERVATION_DATE = pd.to_datetime("2026-10-31")
