@@ -28,10 +28,6 @@
 | **Pre-Rendered Notebooks** | 3 executed Jupyter notebooks with persistent tables, logs & plots | .ipynb | [📓 Notebook 01](notebooks/01_data_generation_cleaning.ipynb) / [02](notebooks/02_eda_feature_engineering.ipynb) / [03](notebooks/03_rfm_kmeans_clustering.ipynb) |
 | **Statistical Hypothesis Tests** | Parametric ANOVA & Kruskal-Wallis inferential test statistics | CSV | [📊 View Hypothesis Tests (.csv)](data/processed/statistical_hypothesis_tests.csv) |
 | **Scenario Financial Models** | Bear, Base, and Bull scenario planning models with ROI projections | CSV | [📈 View Scenario Models (.csv)](data/processed/scenario_financial_modeling.csv) |
-| **Project Submission Summary** | 380+ word executive summary covering problem, methods & results | Text (.txt) | [📄 View Summary (.txt)](submission/PROJECT_SUBMISSION_DESCRIPTION.txt) |
-| **Complete Audit Report** | Independent 20-phase audit report with empirical verification evidence | Markdown | [🔍 View Audit Report (.md)](submission/FINAL_AUDIT_REPORT.md) |
-| **Evaluation Checklist** | 26-point verification matrix with PASSED/VERIFIED status | Markdown | [✅ View Checklist (.md)](submission/FINAL_INTERNSHIP_SUBMISSION_CHECKLIST.md) |
-| **Interview Defense Guide** | 20 core technical questions & senior-level viva defense answers | Markdown | [🎓 View Interview Guide (.md)](INTERVIEW_DEFENSE_GUIDE.md) |
 
 ---
 
@@ -365,10 +361,7 @@ HospitalIQ/
 │   ├── segment_profiles.csv
 │   ├── segment_migration_chart.png
 │   ├── statistical_hypothesis_tests.csv
-│   ├── scenario_financial_modeling.csv
-│   ├── FINAL_AUDIT_REPORT.md
-│   ├── FINAL_INTERNSHIP_SUBMISSION_CHECKLIST.md
-│   └── PROJECT_SUBMISSION_DESCRIPTION.txt
+│   └── scenario_financial_modeling.csv
 ├── run_pipeline.py                   # Master pipeline execution script
 ├── requirements.txt                  # Stable dependencies
 └── README.md                         # Project documentation
